@@ -1,0 +1,240 @@
+{
+  "en": {
+    "meta.title": "AI Assistant for Telegram — Memory, Search, Privacy",
+    "meta.description": "Telegram AI bot with 10-day memory, web search, and end-to-end encryption. Free to start.",
+    "hero.eyebrow": "Telegram AI Assistant",
+    "hero.h1": "Your Telegram AI that actually remembers you",
+    "hero.sub": "10 days of context. Web search. End-to-end encryption. No data leaves your control.",
+    "hero.cta": "Add to Telegram →",
+    "hero.note": "Free to start · No credit card required",
+    "features.memory.title": "10-Day Memory",
+    "features.memory.desc": "Daily summaries + rolling context. It knows what you talked about last Tuesday.",
+    "features.search.title": "Web Search Built-in",
+    "features.search.desc": "Ask anything current. Get answers with sources, not hallucinations.",
+    "features.encrypted.title": "Encrypted by Default",
+    "features.encrypted.desc": "Your conversations are encrypted at rest. We can't read them. Nobody can.",
+    "features.byok.title": "Bring Your Own Key",
+    "features.byok.desc": "Use your own OpenAI/Anthropic API key. Full control, zero markup.",
+    "how.title": "How It Works",
+    "how.step1.title": "Start the bot",
+    "how.step1.desc": "Open Telegram, hit Start. That's it.",
+    "how.step2.title": "Just talk",
+    "how.step2.desc": "Ask questions, brainstorm, search the web. It remembers context across days.",
+    "how.step3.title": "Go Pro when ready",
+    "how.step3.desc": "Unlock longer memory, priority responses, and BYOK mode.",
+    "examples.title": "See It in Action",
+    "examples.memory.label": "🧠 Memory",
+    "examples.search.label": "🔍 Web Search",
+    "examples.privacy.label": "🔐 Privacy",
+    "pricing.title": "Pricing",
+    "pricing.free.name": "Free",
+    "pricing.free.price": "$0",
+    "pricing.free.per": "/mo",
+    "pricing.free.features": [
+      "3-day memory",
+      "20 messages/day",
+      "Web search (5/day)",
+      "Encrypted storage"
+    ],
+    "pricing.free.cta": "Start Free →",
+    "pricing.pro.name": "Pro",
+    "pricing.pro.badge": "Popular",
+    "pricing.pro.price": "$9",
+    "pricing.pro.per": "/mo",
+    "pricing.pro.features": [
+      "10-day memory",
+      "Unlimited messages",
+      "Unlimited web search",
+      "Priority response time"
+    ],
+    "pricing.pro.cta": "Upgrade to Pro →",
+    "pricing.byok.name": "BYOK",
+    "pricing.byok.price": "$4",
+    "pricing.byok.per": "/mo",
+    "pricing.byok.features": [
+      "Everything in Pro",
+      "Use your own API keys",
+      "No per-message costs",
+      "Self-hosted option"
+    ],
+    "pricing.byok.cta": "Get Started →",
+    "pricing.note": "All plans include encryption. Cancel anytime.",
+    "privacy.title": "Privacy isn't a feature. It's the architecture.",
+    "privacy.items": [
+      "🔒 AES-256 encryption at rest",
+      "🚫 We never read your messages",
+      "🏠 Self-hosted option available",
+      "🗑️ Delete everything with /delete",
+      "📖 Open-source core"
+    ],
+    "faq.title": "FAQ",
+    "faq.items": [
+      {
+        "q": "Is my data safe?",
+        "a": "Yes. All messages are encrypted with AES-256. We use zero-knowledge architecture — even we can't read your conversations."
+      },
+      {
+        "q": "What models do you use?",
+        "a": "We use state-of-the-art models from OpenAI and Anthropic. With BYOK mode, you choose exactly which model and provider to use."
+      },
+      {
+        "q": "What does \"10-day memory\" mean?",
+        "a": "The bot creates daily summaries of conversations and maintains rolling context. It remembers key facts and topics for up to 10 days."
+      },
+      {
+        "q": "Can I self-host this?",
+        "a": "Yes. We provide a Docker image and setup guide. Self-hosted users get the same features with complete data sovereignty."
+      },
+      {
+        "q": "How do I cancel?",
+        "a": "Send /cancel to the bot or manage in settings. No questions asked, instant cancellation."
+      }
+    ],
+    "footer.product": "Product",
+    "footer.features": "Features",
+    "footer.pricing": "Pricing",
+    "footer.faq": "FAQ",
+    "footer.legal": "Legal",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms",
+    "footer.connect": "Connect",
+    "footer.telegram": "Telegram Bot",
+    "footer.github": "GitHub",
+    "footer.copy": "© 2026 Smart Assistant. Built with 🤖 and ☕",
+    "chat.memory.user1": "What did we discuss yesterday about the project?",
+    "chat.memory.bot1": "Yesterday you asked about migrating the database to PostgreSQL. You decided to start with the users table and keep MongoDB for logs temporarily.",
+    "chat.memory.user2": "Right! And what was the deadline?",
+    "chat.memory.bot2": "You mentioned March 15th as the target date for the first phase.",
+    "chat.search.user1": "What's the latest news about GPT-5?",
+    "chat.search.bot1": "Based on recent sources: OpenAI hasn't officially announced GPT-5 yet, but reports suggest it's in internal testing. Key improvements expected include better reasoning and multimodal capabilities. [Source: TechCrunch, The Verge]",
+    "chat.search.user2": "How does it compare to Claude?",
+    "chat.search.bot2": "Both are competitive. Claude focuses on safety and long context (200K tokens), while GPT models excel in tool use and ecosystem. The choice depends on your use case.",
+    "chat.privacy.user1": "Is my data safe here?",
+    "chat.privacy.bot1": "Yes. All your messages are encrypted with AES-256 at rest. I can't access your raw data — only the encrypted context needed for our conversation.",
+    "chat.privacy.user2": "Can I delete everything?",
+    "chat.privacy.bot2": "Absolutely. Send /delete and all your data — messages, memory, settings — will be permanently erased. No backups retained.",
+    "chat.privacy.user3": "What about my API key?",
+    "chat.privacy.bot3": "Your API key is stored encrypted and never logged. You can remove it anytime with /settings.",
+    "chat.header.title": "AI Assistant",
+    "chat.header.subtitle": "bot"
+  },
+  "ru": {
+    "meta.title": "AI-ассистент для Telegram — Память, Поиск, Приватность",
+    "meta.description": "Telegram AI бот с памятью на 10 дней, веб-поиском и сквозным шифрованием. Начните бесплатно.",
+    "hero.eyebrow": "AI-ассистент для Telegram",
+    "hero.h1": "Ваш AI в Telegram, который действительно вас помнит",
+    "hero.sub": "10 дней контекста. Веб-поиск. Сквозное шифрование. Ваши данные остаются под вашим контролем.",
+    "hero.cta": "Добавить в Telegram →",
+    "hero.note": "Бесплатный старт · Без привязки карты",
+    "features.memory.title": "Память на 10 дней",
+    "features.memory.desc": "Ежедневные саммари + скользящий контекст. Помнит, о чём вы говорили в прошлый вторник.",
+    "features.search.title": "Встроенный веб-поиск",
+    "features.search.desc": "Спрашивайте о чём угодно актуальном. Ответы с источниками, а не галлюцинации.",
+    "features.encrypted.title": "Шифрование по умолчанию",
+    "features.encrypted.desc": "Ваши разговоры зашифрованы в покое. Мы не можем их прочитать. Никто не может.",
+    "features.byok.title": "Свой API-ключ",
+    "features.byok.desc": "Используйте свой ключ OpenAI/Anthropic. Полный контроль, без наценок.",
+    "how.title": "Как это работает",
+    "how.step1.title": "Запустите бота",
+    "how.step1.desc": "Откройте Telegram, нажмите Start. Всё.",
+    "how.step2.title": "Просто общайтесь",
+    "how.step2.desc": "Задавайте вопросы, устраивайте мозговые штурмы, ищите в вебе. Бот помнит контекст днями.",
+    "how.step3.title": "Переходите на Pro",
+    "how.step3.desc": "Разблокируйте длинную память, приоритетные ответы и режим BYOK.",
+    "examples.title": "Примеры работы",
+    "examples.memory.label": "🧠 Память",
+    "examples.search.label": "🔍 Веб-поиск",
+    "examples.privacy.label": "🔐 Приватность",
+    "pricing.title": "Тарифы",
+    "pricing.free.name": "Бесплатный",
+    "pricing.free.price": "$0",
+    "pricing.free.per": "/мес",
+    "pricing.free.features": [
+      "Память на 3 дня",
+      "20 сообщений/день",
+      "Веб-поиск (5/день)",
+      "Зашифрованное хранилище"
+    ],
+    "pricing.free.cta": "Начать бесплатно →",
+    "pricing.pro.name": "Pro",
+    "pricing.pro.badge": "Популярный",
+    "pricing.pro.price": "$9",
+    "pricing.pro.per": "/мес",
+    "pricing.pro.features": [
+      "Память на 10 дней",
+      "Безлимитные сообщения",
+      "Безлимитный веб-поиск",
+      "Приоритетное время ответа"
+    ],
+    "pricing.pro.cta": "Перейти на Pro →",
+    "pricing.byok.name": "BYOK",
+    "pricing.byok.price": "$4",
+    "pricing.byok.per": "/мес",
+    "pricing.byok.features": [
+      "Всё из Pro",
+      "Свои API-ключи",
+      "Без платы за сообщения",
+      "Возможность self-hosted"
+    ],
+    "pricing.byok.cta": "Начать →",
+    "pricing.note": "Все тарифы включают шифрование. Отмена в любой момент.",
+    "privacy.title": "Приватность — не фича. Это архитектура.",
+    "privacy.items": [
+      "🔒 Шифрование AES-256 в покое",
+      "🚫 Мы никогда не читаем ваши сообщения",
+      "🏠 Возможность self-hosted",
+      "🗑️ Удалите всё командой /delete",
+      "📖 Открытый исходный код"
+    ],
+    "faq.title": "Частые вопросы",
+    "faq.items": [
+      {
+        "q": "Мои данные в безопасности?",
+        "a": "Да. Все сообщения зашифрованы AES-256. Мы используем zero-knowledge архитектуру — даже мы не можем прочитать ваши разговоры."
+      },
+      {
+        "q": "Какие модели вы используете?",
+        "a": "Мы используем передовые модели от OpenAI и Anthropic. В режиме BYOK вы сами выбираете модель и провайдера."
+      },
+      {
+        "q": "Что значит «память на 10 дней»?",
+        "a": "Бот создаёт ежедневные саммари разговоров и поддерживает скользящий контекст. Помнит ключевые факты и темы до 10 дней."
+      },
+      {
+        "q": "Можно ли развернуть у себя?",
+        "a": "Да. Мы предоставляем Docker-образ и инструкцию. Self-hosted пользователи получают те же возможности с полным контролем данных."
+      },
+      {
+        "q": "Как отменить подписку?",
+        "a": "Отправьте /cancel боту или управляйте в настройках. Без вопросов, моментальная отмена."
+      }
+    ],
+    "footer.product": "Продукт",
+    "footer.features": "Возможности",
+    "footer.pricing": "Тарифы",
+    "footer.faq": "FAQ",
+    "footer.legal": "Юридическое",
+    "footer.privacy": "Политика конфиденциальности",
+    "footer.terms": "Условия",
+    "footer.connect": "Связь",
+    "footer.telegram": "Telegram-бот",
+    "footer.github": "GitHub",
+    "footer.copy": "© 2026 Smart Assistant. Сделано с 🤖 и ☕",
+    "chat.memory.user1": "Что мы обсуждали вчера по проекту?",
+    "chat.memory.bot1": "Вчера вы спрашивали о миграции базы данных на PostgreSQL. Решили начать с таблицы пользователей и временно оставить MongoDB для логов.",
+    "chat.memory.user2": "Точно! А какой был дедлайн?",
+    "chat.memory.bot2": "Вы упоминали 15 марта как целевую дату для первой фазы.",
+    "chat.search.user1": "Какие последние новости о GPT-5?",
+    "chat.search.bot1": "По последним данным: OpenAI официально не анонсировала GPT-5, но, по сообщениям, модель проходит внутреннее тестирование. Ожидаются улучшения в рассуждениях и мультимодальности. [Источники: TechCrunch, The Verge]",
+    "chat.search.user2": "Как он сравнивается с Claude?",
+    "chat.search.bot2": "Оба конкурентоспособны. Claude фокусируется на безопасности и длинном контексте (200K токенов), GPT — на интеграции инструментов и экосистеме. Выбор зависит от задачи.",
+    "chat.privacy.user1": "Мои данные здесь в безопасности?",
+    "chat.privacy.bot1": "Да. Все ваши сообщения зашифрованы AES-256 в покое. Я не имею доступа к сырым данным — только к зашифрованному контексту для нашего разговора.",
+    "chat.privacy.user2": "Могу ли я удалить всё?",
+    "chat.privacy.bot2": "Безусловно. Отправьте /delete, и все ваши данные — сообщения, память, настройки — будут безвозвратно удалены. Бэкапы не сохраняются.",
+    "chat.privacy.user3": "А что насчёт моего API-ключа?",
+    "chat.privacy.bot3": "Ваш API-ключ хранится в зашифрованном виде и никогда не логируется. Удалить его можно в любой момент через /settings.",
+    "chat.header.title": "AI-ассистент",
+    "chat.header.subtitle": "бот"
+  }
+}

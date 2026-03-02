@@ -28,6 +28,40 @@ body {
   font-size: 16px;
 }
 
+/* Language Switcher */
+.lang-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border);
+}
+
+.lang-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-btn:hover {
+  color: var(--text);
+}
+
+.lang-btn--active {
+  background: var(--primary);
+  color: #fff;
+}
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -551,6 +585,11 @@ section {
 
 /* Mobile */
 @media (max-width: 600px) {
+  .lang-switcher {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
   .hero {
     padding: 60px 0;
   }
