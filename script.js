@@ -38,6 +38,7 @@ const I18N = {
       this.initSwitcher();
     } catch (error) {
       console.error('i18n init failed:', error);
+      this.renderFallbackFAQ();
       observeRevealElements();
     }
   },
@@ -127,6 +128,31 @@ const I18N = {
         this.currentLang = lang;
         this.apply();
       });
+    });
+  },
+
+  renderFallbackFAQ() {
+    const fallbackFAQs = [
+      { q: 'Is my data safe?', a: 'Yes. All messages are encrypted with AES-256. We use zero-knowledge architecture — even we can\'t read your conversations.' },
+      { q: 'Do you store my messages?', a: 'Only encrypted summaries for memory. Raw messages are discarded after processing. You can delete everything anytime with /delete.' },
+      { q: 'Can I use my own API key?', a: 'Yes. BYOK (Bring Your Own Key) mode lets you connect your OpenAI or Anthropic key. We add no markup.' },
+      { q: 'What happens if I stop paying?', a: 'You revert to Free tier. Your data stays encrypted and you can export anything before canceling.' },
+      { q: 'Is it open source?', a: 'The core is open source. You can self-host or audit the code on GitHub.' }
+    ];
+
+    document.querySelectorAll('[data-i18n-faq]').forEach((el) => {
+      el.innerHTML = fallbackFAQs
+        .map(
+          (item) => `
+            <details class="faq__item reveal">
+              <summary>${item.q}</summary>
+              <p>${item.a}</p>
+            </details>
+          `
+        )
+        .join('');
+
+      observeRevealElements(el);
     });
   }
 };
