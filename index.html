@@ -88,35 +88,45 @@
         <div class="grid examples__grid">
           <article class="card demo-card reveal">
             <p class="demo-card__label">🧠 Memory</p>
-            <div class="demo-card__header">
-              <div class="demo-card__avatar" aria-hidden="true">🤖</div>
-              <div class="demo-card__name">AI Assistant</div>
-            </div>
-            <div class="demo-card__chat" aria-label="Memory chat example">
-              <div class="chat-row chat-row--user">
-                <div class="chat-msg chat-msg--user">
-                  <p>What did we discuss yesterday about the project?</p>
-                  <span class="chat-msg__time">10:15</span>
+            <div class="demo-card__window" aria-label="Memory chat example">
+              <div class="demo-card__topbar">
+                <div>
+                  <div class="demo-card__title">AI Assistant</div>
+                  <div class="demo-card__subtitle">bot</div>
                 </div>
               </div>
-              <div class="chat-row chat-row--bot">
-                <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                <div class="chat-msg chat-msg--bot">
-                  <p>Yesterday you asked about migrating the database to PostgreSQL. You decided to start with the users table and keep MongoDB for logs temporarily.</p>
-                  <span class="chat-msg__time">10:15</span>
+              <div class="demo-card__chat">
+                <div class="chat-row chat-row--user chat-row--single">
+                  <div class="chat-msg chat-msg--user">
+                    <p>What did we discuss yesterday about the project?</p>
+                    <span class="chat-msg__time">✓✓ 10:15</span>
+                  </div>
                 </div>
-              </div>
-              <div class="chat-row chat-row--user">
-                <div class="chat-msg chat-msg--user">
-                  <p>Right! And what was the deadline?</p>
-                  <span class="chat-msg__time">10:16</span>
+                <div class="chat-group chat-group--bot">
+                  <p class="chat-group__name">AI Assistant</p>
+                  <div class="chat-row chat-row--bot chat-row--single">
+                    <div class="chat-msg chat-msg--bot">
+                      <p>Yesterday you asked about migrating the database to PostgreSQL. You decided to start with the users table and keep MongoDB for logs temporarily.</p>
+                      <span class="chat-msg__time">10:15</span>
+                    </div>
+                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
+                  </div>
                 </div>
-              </div>
-              <div class="chat-row chat-row--bot">
-                <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                <div class="chat-msg chat-msg--bot">
-                  <p>You mentioned March 15th as the target date for the first phase.</p>
-                  <span class="chat-msg__time">10:16</span>
+                <div class="chat-row chat-row--user chat-row--single">
+                  <div class="chat-msg chat-msg--user">
+                    <p>Right! And what was the deadline?</p>
+                    <span class="chat-msg__time">✓✓ 10:16</span>
+                  </div>
+                </div>
+                <div class="chat-group chat-group--bot">
+                  <p class="chat-group__name">AI Assistant</p>
+                  <div class="chat-row chat-row--bot chat-row--single">
+                    <div class="chat-msg chat-msg--bot">
+                      <p>You mentioned March 15th as the target date for the first phase.</p>
+                      <span class="chat-msg__time">10:16</span>
+                    </div>
+                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -124,35 +134,45 @@
 
           <article class="card demo-card reveal">
             <p class="demo-card__label">🔍 Web Search</p>
-            <div class="demo-card__header">
-              <div class="demo-card__avatar" aria-hidden="true">🤖</div>
-              <div class="demo-card__name">AI Assistant</div>
-            </div>
-            <div class="demo-card__chat" aria-label="Web search chat example">
-              <div class="chat-row chat-row--user">
-                <div class="chat-msg chat-msg--user">
-                  <p>What's the latest news about GPT-5?</p>
-                  <span class="chat-msg__time">14:30</span>
+            <div class="demo-card__window" aria-label="Web search chat example">
+              <div class="demo-card__topbar">
+                <div>
+                  <div class="demo-card__title">AI Assistant</div>
+                  <div class="demo-card__subtitle">bot</div>
                 </div>
               </div>
-              <div class="chat-row chat-row--bot">
-                <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                <div class="chat-msg chat-msg--bot">
-                  <p>Based on recent sources: OpenAI hasn't officially announced GPT-5 yet, but reports suggest it's in internal testing. Key improvements expected include better reasoning and multimodal capabilities. [Source: TechCrunch, The Verge]</p>
-                  <span class="chat-msg__time">14:31</span>
+              <div class="demo-card__chat">
+                <div class="chat-row chat-row--user chat-row--single">
+                  <div class="chat-msg chat-msg--user">
+                    <p>What's the latest news about GPT-5?</p>
+                    <span class="chat-msg__time">✓✓ 14:30</span>
+                  </div>
                 </div>
-              </div>
-              <div class="chat-row chat-row--user">
-                <div class="chat-msg chat-msg--user">
-                  <p>How does it compare to Claude?</p>
-                  <span class="chat-msg__time">14:31</span>
+                <div class="chat-group chat-group--bot">
+                  <p class="chat-group__name">AI Assistant</p>
+                  <div class="chat-row chat-row--bot chat-row--single">
+                    <div class="chat-msg chat-msg--bot">
+                      <p>Based on recent sources: OpenAI hasn't officially announced GPT-5 yet, but reports suggest it's in internal testing. Key improvements expected include better reasoning and multimodal capabilities. [Source: TechCrunch, The Verge]</p>
+                      <span class="chat-msg__time">14:31</span>
+                    </div>
+                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
+                  </div>
                 </div>
-              </div>
-              <div class="chat-row chat-row--bot">
-                <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                <div class="chat-msg chat-msg--bot">
-                  <p>Both are competitive. Claude focuses on safety and long context (200K tokens), while GPT models excel in tool use and ecosystem. The choice depends on your use case.</p>
-                  <span class="chat-msg__time">14:32</span>
+                <div class="chat-row chat-row--user chat-row--single">
+                  <div class="chat-msg chat-msg--user">
+                    <p>How does it compare to Claude?</p>
+                    <span class="chat-msg__time">✓✓ 14:31</span>
+                  </div>
+                </div>
+                <div class="chat-group chat-group--bot">
+                  <p class="chat-group__name">AI Assistant</p>
+                  <div class="chat-row chat-row--bot chat-row--single">
+                    <div class="chat-msg chat-msg--bot">
+                      <p>Both are competitive. Claude focuses on safety and long context (200K tokens), while GPT models excel in tool use and ecosystem. The choice depends on your use case.</p>
+                      <span class="chat-msg__time">14:32</span>
+                    </div>
+                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -160,48 +180,61 @@
 
           <article class="card demo-card reveal">
             <p class="demo-card__label">🔐 Privacy</p>
-            <div class="demo-card__header">
-              <div class="demo-card__avatar" aria-hidden="true">🤖</div>
-              <div class="demo-card__name">AI Assistant</div>
-            </div>
-            <div class="demo-card__chat" aria-label="Privacy chat example">
-              <div class="chat-row chat-row--user">
-                <div class="chat-msg chat-msg--user">
-                  <p>Is my data safe here?</p>
-                  <span class="chat-msg__time">18:00</span>
+            <div class="demo-card__window" aria-label="Privacy chat example">
+              <div class="demo-card__topbar">
+                <div>
+                  <div class="demo-card__title">AI Assistant</div>
+                  <div class="demo-card__subtitle">bot</div>
                 </div>
               </div>
-              <div class="chat-row chat-row--bot">
-                <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                <div class="chat-msg chat-msg--bot">
-                  <p>Yes. All your messages are encrypted with AES-256 at rest. I can't access your raw data — only the encrypted context needed for our conversation.</p>
-                  <span class="chat-msg__time">18:00</span>
+              <div class="demo-card__chat">
+                <div class="chat-row chat-row--user chat-row--single">
+                  <div class="chat-msg chat-msg--user">
+                    <p>Is my data safe here?</p>
+                    <span class="chat-msg__time">✓✓ 18:00</span>
+                  </div>
                 </div>
-              </div>
-              <div class="chat-row chat-row--user">
-                <div class="chat-msg chat-msg--user">
-                  <p>Can I delete everything?</p>
-                  <span class="chat-msg__time">18:01</span>
+                <div class="chat-group chat-group--bot">
+                  <p class="chat-group__name">AI Assistant</p>
+                  <div class="chat-row chat-row--bot chat-row--single">
+                    <div class="chat-msg chat-msg--bot">
+                      <p>Yes. All your messages are encrypted with AES-256 at rest. I can't access your raw data — only the encrypted context needed for our conversation.</p>
+                      <span class="chat-msg__time">18:00</span>
+                    </div>
+                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
+                  </div>
                 </div>
-              </div>
-              <div class="chat-row chat-row--bot">
-                <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                <div class="chat-msg chat-msg--bot">
-                  <p>Absolutely. Send /delete and all your data — messages, memory, settings — will be permanently erased. No backups retained.</p>
-                  <span class="chat-msg__time">18:01</span>
+                <div class="chat-row chat-row--user chat-row--single">
+                  <div class="chat-msg chat-msg--user">
+                    <p>Can I delete everything?</p>
+                    <span class="chat-msg__time">✓✓ 18:01</span>
+                  </div>
                 </div>
-              </div>
-              <div class="chat-row chat-row--user">
-                <div class="chat-msg chat-msg--user">
-                  <p>What about my API key?</p>
-                  <span class="chat-msg__time">18:02</span>
+                <div class="chat-group chat-group--bot">
+                  <p class="chat-group__name">AI Assistant</p>
+                  <div class="chat-row chat-row--bot chat-row--single">
+                    <div class="chat-msg chat-msg--bot">
+                      <p>Absolutely. Send /delete and all your data — messages, memory, settings — will be permanently erased. No backups retained.</p>
+                      <span class="chat-msg__time">18:01</span>
+                    </div>
+                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
+                  </div>
                 </div>
-              </div>
-              <div class="chat-row chat-row--bot">
-                <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                <div class="chat-msg chat-msg--bot">
-                  <p>Your API key is stored encrypted and never logged. You can remove it anytime with /settings.</p>
-                  <span class="chat-msg__time">18:02</span>
+                <div class="chat-row chat-row--user chat-row--single">
+                  <div class="chat-msg chat-msg--user">
+                    <p>What about my API key?</p>
+                    <span class="chat-msg__time">✓✓ 18:02</span>
+                  </div>
+                </div>
+                <div class="chat-group chat-group--bot">
+                  <p class="chat-group__name">AI Assistant</p>
+                  <div class="chat-row chat-row--bot chat-row--single">
+                    <div class="chat-msg chat-msg--bot">
+                      <p>Your API key is stored encrypted and never logged. You can remove it anytime with /settings.</p>
+                      <span class="chat-msg__time">18:02</span>
+                    </div>
+                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
+                  </div>
                 </div>
               </div>
             </div>
