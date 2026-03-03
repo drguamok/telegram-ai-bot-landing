@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Assistant for Telegram — Memory, Search, Privacy</title>
-    <meta name="description" content="Telegram AI bot with 10-day memory, web search, and end-to-end encryption. Free to start." />
+    <title>AI Assistant for Telegram — Remembers, Searches, Reminds</title>
+    <meta name="description" content="Telegram AI bot that works in the background: remembers context, searches the web, and sends reminders." />
     <meta property="og:title" content="AI Assistant for Telegram" />
-    <meta property="og:description" content="10-day memory, web search, encryption, and BYOK mode." />
+    <meta property="og:description" content="Memory + web search + scheduler in one Telegram bot." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -42,23 +42,18 @@
         <div class="grid features__grid">
           <article class="card reveal">
             <div class="icon" aria-hidden="true">🧠</div>
-            <h3 data-i18n="features.memory.title">10-Day Memory</h3>
-            <p data-i18n="features.memory.desc">Daily summaries + rolling context. It knows what you talked about last Tuesday.</p>
+            <h3 data-i18n="features.memory.title">Memory that knows you</h3>
+            <p data-i18n="features.memory.desc">It remembers your preferences and context between conversations, so you don't repeat yourself.</p>
           </article>
           <article class="card reveal">
             <div class="icon" aria-hidden="true">🔍</div>
-            <h3 data-i18n="features.search.title">Web Search Built-in</h3>
-            <p data-i18n="features.search.desc">Ask anything current. Get answers with sources, not hallucinations.</p>
+            <h3 data-i18n="features.search.title">Live Web Search</h3>
+            <p data-i18n="features.search.desc">Find fresh information in real time with links and updates when things change.</p>
           </article>
           <article class="card reveal">
-            <div class="icon" aria-hidden="true">🔐</div>
-            <h3 data-i18n="features.encrypted.title">Encrypted by Default</h3>
-            <p data-i18n="features.encrypted.desc">Your conversations are encrypted at rest. We can't read them. Nobody can.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon" aria-hidden="true">🔑</div>
-            <h3 data-i18n="features.byok.title">Bring Your Own Key</h3>
-            <p data-i18n="features.byok.desc">Use your own OpenAI/Anthropic API key. Full control, zero markup.</p>
+            <div class="icon" aria-hidden="true">⏰</div>
+            <h3 data-i18n="features.scheduler.title">Smart Scheduler</h3>
+            <p data-i18n="features.scheduler.desc">Set reminders and recurring tasks once, and the bot handles them automatically.</p>
           </article>
         </div>
       </div>
@@ -92,157 +87,46 @@
         <h2 class="section-title reveal" data-i18n="examples.title">See It in Action</h2>
         <div class="grid examples__grid">
           <article class="card demo-card reveal">
-            <p class="demo-card__label" data-i18n="examples.memory.label">🧠 Memory</p>
-            <div class="demo-card__window" aria-label="Memory chat example">
-              <div class="demo-card__topbar">
-                <div>
-                  <div class="demo-card__title" data-i18n="chat.header.title">AI Assistant</div>
-                  <div class="demo-card__subtitle" data-i18n="chat.header.subtitle">bot</div>
-                </div>
-              </div>
-              <div class="demo-card__chat">
-                <div class="chat-row chat-row--user chat-row--single">
-                  <div class="chat-msg chat-msg--user">
-                    <p data-i18n="chat.memory.user1">What did we discuss yesterday about the project?</p>
-                    <span class="chat-msg__time">✓✓ 10:15</span>
-                  </div>
-                </div>
-                <div class="chat-group chat-group--bot">
-                  <p class="chat-group__name">AI Assistant</p>
-                  <div class="chat-row chat-row--bot chat-row--single">
-                    <div class="chat-msg chat-msg--bot">
-                      <p data-i18n="chat.memory.bot1">Yesterday you asked about migrating the database to PostgreSQL. You decided to start with the users table and keep MongoDB for logs temporarily.</p>
-                      <span class="chat-msg__time">10:15</span>
-                    </div>
-                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                  </div>
-                </div>
-                <div class="chat-row chat-row--user chat-row--single">
-                  <div class="chat-msg chat-msg--user">
-                    <p data-i18n="chat.memory.user2">Right! And what was the deadline?</p>
-                    <span class="chat-msg__time">✓✓ 10:16</span>
-                  </div>
-                </div>
-                <div class="chat-group chat-group--bot">
-                  <p class="chat-group__name">AI Assistant</p>
-                  <div class="chat-row chat-row--bot chat-row--single">
-                    <div class="chat-msg chat-msg--bot">
-                      <p data-i18n="chat.memory.bot2">You mentioned March 15th as the target date for the first phase.</p>
-                      <span class="chat-msg__time">10:16</span>
-                    </div>
-                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="icon" aria-hidden="true">💼</div>
+            <h3 data-i18n="examples.work.title">Work updates</h3>
+            <p class="demo-card__label" data-i18n="examples.work.combo">Scheduler + Memory + Web Search</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.work.user">Every Friday send news about Project Alpha and competitors</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.work.bot">Got it! Every Friday I'll search Alpha news and monitor competitors you told me about</p></div></div>
           </article>
-
           <article class="card demo-card reveal">
-            <p class="demo-card__label" data-i18n="examples.search.label">🔍 Web Search</p>
-            <div class="demo-card__window" aria-label="Web search chat example">
-              <div class="demo-card__topbar">
-                <div>
-                  <div class="demo-card__title" data-i18n="chat.header.title">AI Assistant</div>
-                  <div class="demo-card__subtitle" data-i18n="chat.header.subtitle">bot</div>
-                </div>
-              </div>
-              <div class="demo-card__chat">
-                <div class="chat-row chat-row--user chat-row--single">
-                  <div class="chat-msg chat-msg--user">
-                    <p data-i18n="chat.search.user1">What's the latest news about GPT-5?</p>
-                    <span class="chat-msg__time">✓✓ 14:30</span>
-                  </div>
-                </div>
-                <div class="chat-group chat-group--bot">
-                  <p class="chat-group__name">AI Assistant</p>
-                  <div class="chat-row chat-row--bot chat-row--single">
-                    <div class="chat-msg chat-msg--bot">
-                      <p data-i18n="chat.search.bot1">Based on recent sources: OpenAI hasn't officially announced GPT-5 yet, but reports suggest it's in internal testing. Key improvements expected include better reasoning and multimodal capabilities. [Source: TechCrunch, The Verge]</p>
-                      <span class="chat-msg__time">14:31</span>
-                    </div>
-                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                  </div>
-                </div>
-                <div class="chat-row chat-row--user chat-row--single">
-                  <div class="chat-msg chat-msg--user">
-                    <p data-i18n="chat.search.user2">How does it compare to Claude?</p>
-                    <span class="chat-msg__time">✓✓ 14:31</span>
-                  </div>
-                </div>
-                <div class="chat-group chat-group--bot">
-                  <p class="chat-group__name">AI Assistant</p>
-                  <div class="chat-row chat-row--bot chat-row--single">
-                    <div class="chat-msg chat-msg--bot">
-                      <p data-i18n="chat.search.bot2">Both are competitive. Claude focuses on safety and long context (200K tokens), while GPT models excel in tool use and ecosystem. The choice depends on your use case.</p>
-                      <span class="chat-msg__time">14:32</span>
-                    </div>
-                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="icon" aria-hidden="true">🛍️</div>
+            <h3 data-i18n="examples.shopping.title">Price tracker</h3>
+            <p class="demo-card__label" data-i18n="examples.shopping.combo">Scheduler + Web Search + Memory</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.shopping.user">Monitor iPhone 15 price, notify when below $800</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.shopping.bot">Monitoring. Checking daily. Will message when ≤ $800</p></div></div>
           </article>
-
           <article class="card demo-card reveal">
-            <p class="demo-card__label" data-i18n="examples.privacy.label">🔐 Privacy</p>
-            <div class="demo-card__window" aria-label="Privacy chat example">
-              <div class="demo-card__topbar">
-                <div>
-                  <div class="demo-card__title" data-i18n="chat.header.title">AI Assistant</div>
-                  <div class="demo-card__subtitle" data-i18n="chat.header.subtitle">bot</div>
-                </div>
-              </div>
-              <div class="demo-card__chat">
-                <div class="chat-row chat-row--user chat-row--single">
-                  <div class="chat-msg chat-msg--user">
-                    <p data-i18n="chat.privacy.user1">Is my data safe here?</p>
-                    <span class="chat-msg__time">✓✓ 18:00</span>
-                  </div>
-                </div>
-                <div class="chat-group chat-group--bot">
-                  <p class="chat-group__name">AI Assistant</p>
-                  <div class="chat-row chat-row--bot chat-row--single">
-                    <div class="chat-msg chat-msg--bot">
-                      <p data-i18n="chat.privacy.bot1">Yes. All your messages are encrypted with AES-256 at rest. I can't access your raw data — only the encrypted context needed for our conversation.</p>
-                      <span class="chat-msg__time">18:00</span>
-                    </div>
-                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                  </div>
-                </div>
-                <div class="chat-row chat-row--user chat-row--single">
-                  <div class="chat-msg chat-msg--user">
-                    <p data-i18n="chat.privacy.user2">Can I delete everything?</p>
-                    <span class="chat-msg__time">✓✓ 18:01</span>
-                  </div>
-                </div>
-                <div class="chat-group chat-group--bot">
-                  <p class="chat-group__name">AI Assistant</p>
-                  <div class="chat-row chat-row--bot chat-row--single">
-                    <div class="chat-msg chat-msg--bot">
-                      <p data-i18n="chat.privacy.bot2">Absolutely. Send /delete and all your data — messages, memory, settings — will be permanently erased. No backups retained.</p>
-                      <span class="chat-msg__time">18:01</span>
-                    </div>
-                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                  </div>
-                </div>
-                <div class="chat-row chat-row--user chat-row--single">
-                  <div class="chat-msg chat-msg--user">
-                    <p data-i18n="chat.privacy.user3">What about my API key?</p>
-                    <span class="chat-msg__time">✓✓ 18:02</span>
-                  </div>
-                </div>
-                <div class="chat-group chat-group--bot">
-                  <p class="chat-group__name">AI Assistant</p>
-                  <div class="chat-row chat-row--bot chat-row--single">
-                    <div class="chat-msg chat-msg--bot">
-                      <p data-i18n="chat.privacy.bot3">Your API key is stored encrypted and never logged. You can remove it anytime with /settings.</p>
-                      <span class="chat-msg__time">18:02</span>
-                    </div>
-                    <div class="chat-bot-avatar" aria-hidden="true">🤖</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="icon" aria-hidden="true">🎂</div>
+            <h3 data-i18n="examples.family.title">Family planning</h3>
+            <p class="demo-card__label" data-i18n="examples.family.combo">Memory + Web Search</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.family.user">I'm on sugar-free diet. Find cake recipe for daughter's birthday</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.family.bot">Found 3 sugar-free recipes matching your diet</p></div></div>
+          </article>
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">🚗</div>
+            <h3 data-i18n="examples.car.title">Car service</h3>
+            <p class="demo-card__label" data-i18n="examples.car.combo">Scheduler + Memory</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.car.user">Remind in 3 months about car service. Mileage now 28,000</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.car.bot">Will remind in 3 months. Recorded mileage</p></div></div>
+          </article>
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">⚽</div>
+            <h3 data-i18n="examples.sports.title">Match result</h3>
+            <p class="demo-card__label" data-i18n="examples.sports.combo">Scheduler + Web Search</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.sports.user">Send match result. We play Spain at 9 PM</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.sports.bot">Following match. Will send score after final whistle</p></div></div>
+          </article>
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">🎬</div>
+            <h3 data-i18n="examples.entertainment.title">New season alerts</h3>
+            <p class="demo-card__label" data-i18n="examples.entertainment.combo">Scheduler + Web Search</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.entertainment.user">Remind when Dark season 3 comes out and reviews</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.entertainment.bot">Tracking release. Will message with date and reviews</p></div></div>
           </article>
         </div>
       </div>

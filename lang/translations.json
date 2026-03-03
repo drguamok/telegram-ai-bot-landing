@@ -1,31 +1,59 @@
 {
   "en": {
-    "meta.title": "AI Assistant for Telegram — Memory, Search, Privacy",
-    "meta.description": "Telegram AI bot with 10-day memory, web search, and end-to-end encryption. Free to start.",
+    "meta.title": "AI Assistant for Telegram — Remembers, Searches, Reminds",
+    "meta.description": "Telegram AI bot that works in the background: remembers context, searches the web, and sends reminders.",
     "hero.eyebrow": "Telegram AI Assistant",
-    "hero.h1": "Your Telegram AI that actually remembers you",
-    "hero.sub": "10 days of context. Web search. End-to-end encryption. No data leaves your control.",
+    "hero.h1": "Remembers you and watches for important things on its own",
+    "hero.sub": "Works quietly in the background — searches, reminds, and monitors what matters to you.",
     "hero.cta": "Add to Telegram →",
     "hero.note": "Free to start · No credit card required",
-    "features.memory.title": "10-Day Memory",
-    "features.memory.desc": "Daily summaries + rolling context. It knows what you talked about last Tuesday.",
-    "features.search.title": "Web Search Built-in",
-    "features.search.desc": "Ask anything current. Get answers with sources, not hallucinations.",
-    "features.encrypted.title": "Encrypted by Default",
-    "features.encrypted.desc": "Your conversations are encrypted at rest. We can't read them. Nobody can.",
-    "features.byok.title": "Bring Your Own Key",
-    "features.byok.desc": "Use your own OpenAI/Anthropic API key. Full control, zero markup.",
+
+    "features.memory.title": "Memory that knows you",
+    "features.memory.desc": "It remembers context between conversations, so you don't need to repeat yourself.",
+    "features.search.title": "Live Web Search",
+    "features.search.desc": "It finds fresh information in real time and keeps you updated.",
+    "features.scheduler.title": "Smart Scheduler",
+    "features.scheduler.desc": "Set reminders and recurring tasks once, and the bot handles them automatically.",
+
     "how.title": "How It Works",
-    "how.step1.title": "Start the bot",
-    "how.step1.desc": "Open Telegram, hit Start. That's it.",
-    "how.step2.title": "Just talk",
-    "how.step2.desc": "Ask questions, brainstorm, search the web. It remembers context across days.",
-    "how.step3.title": "Go Pro when ready",
-    "how.step3.desc": "Unlock longer memory, priority responses, and BYOK mode.",
-    "examples.title": "See It in Action",
-    "examples.memory.label": "🧠 Memory",
-    "examples.search.label": "🔍 Web Search",
-    "examples.privacy.label": "🔐 Privacy",
+    "how.step1.title": "Tell it what matters",
+    "how.step1.desc": "Share your goals, plans, and preferences in plain words.",
+    "how.step2.title": "It handles the routine",
+    "how.step2.desc": "The bot remembers context, searches the web, and tracks updates in the background.",
+    "how.step3.title": "Get updates at the right moment",
+    "how.step3.desc": "Receive reminders and useful alerts exactly when you need them.",
+
+    "examples.title": "Real-Life Examples",
+    "examples.work.title": "Work updates",
+    "examples.work.combo": "Scheduler + Memory + Web Search",
+    "examples.work.user": "Every Friday send news about Project Alpha and competitors",
+    "examples.work.bot": "Got it! Every Friday I'll search Alpha news and monitor competitors you told me about",
+
+    "examples.shopping.title": "Price tracker",
+    "examples.shopping.combo": "Scheduler + Web Search + Memory",
+    "examples.shopping.user": "Monitor iPhone 15 price, notify when below $800",
+    "examples.shopping.bot": "Monitoring. Checking daily. Will message when ≤ $800",
+
+    "examples.family.title": "Family planning",
+    "examples.family.combo": "Memory + Web Search",
+    "examples.family.user": "I'm on sugar-free diet. Find cake recipe for daughter's birthday",
+    "examples.family.bot": "Found 3 sugar-free recipes matching your diet",
+
+    "examples.car.title": "Car service",
+    "examples.car.combo": "Scheduler + Memory",
+    "examples.car.user": "Remind in 3 months about car service. Mileage now 28,000",
+    "examples.car.bot": "Will remind in 3 months. Recorded mileage",
+
+    "examples.sports.title": "Match result",
+    "examples.sports.combo": "Scheduler + Web Search",
+    "examples.sports.user": "Send match result. We play Spain at 9 PM",
+    "examples.sports.bot": "Following match. Will send score after final whistle",
+
+    "examples.entertainment.title": "New season alerts",
+    "examples.entertainment.combo": "Scheduler + Web Search",
+    "examples.entertainment.user": "Remind when Dark season 3 comes out and reviews",
+    "examples.entertainment.bot": "Tracking release. Will message with date and reviews",
+
     "pricing.title": "Pricing",
     "pricing.free.name": "Free",
     "pricing.free.price": "$0",
@@ -37,6 +65,7 @@
       "Encrypted storage"
     ],
     "pricing.free.cta": "Start Free →",
+
     "pricing.pro.name": "Pro",
     "pricing.pro.badge": "Popular",
     "pricing.pro.price": "$9",
@@ -48,48 +77,52 @@
       "Priority response time"
     ],
     "pricing.pro.cta": "Upgrade to Pro →",
-    "pricing.byok.name": "BYOK",
+
+    "pricing.byok.name": "Your Key",
     "pricing.byok.price": "$4",
     "pricing.byok.per": "/mo",
     "pricing.byok.features": [
       "Everything in Pro",
-      "Use your own API keys",
-      "No per-message costs",
-      "Self-hosted option"
+      "Use your own key",
+      "No extra message fees",
+      "Self-host option"
     ],
     "pricing.byok.cta": "Get Started →",
     "pricing.note": "All plans include encryption. Cancel anytime.",
-    "privacy.title": "Privacy isn't a feature. It's the architecture.",
+
+    "privacy.title": "Your privacy stays protected",
     "privacy.items": [
       "🔒 AES-256 encryption at rest",
       "🚫 We never read your messages",
-      "🏠 Self-hosted option available",
+      "🏠 Self-host option available",
       "🗑️ Delete everything with /delete",
       "📖 Open-source core"
     ],
+
     "faq.title": "FAQ",
     "faq.items": [
       {
         "q": "Is my data safe?",
-        "a": "Yes. All messages are encrypted with AES-256. We use zero-knowledge architecture — even we can't read your conversations."
+        "a": "Yes. Messages are encrypted with AES-256 and we never read your private chats."
       },
       {
-        "q": "What models do you use?",
-        "a": "We use state-of-the-art models from OpenAI and Anthropic. With BYOK mode, you choose exactly which model and provider to use."
+        "q": "Can it send reminders?",
+        "a": "Yes. Set one-time or recurring reminders, and the bot will message you at the right time."
       },
       {
-        "q": "What does \"10-day memory\" mean?",
-        "a": "The bot creates daily summaries of conversations and maintains rolling context. It remembers key facts and topics for up to 10 days."
+        "q": "How does memory help me?",
+        "a": "It remembers your context between chats, like preferences, plans, and ongoing tasks."
+      },
+      {
+        "q": "Does it use fresh information?",
+        "a": "Yes. It can search the web in real time and combine results with your saved context."
       },
       {
         "q": "Can I self-host this?",
-        "a": "Yes. We provide a Docker image and setup guide. Self-hosted users get the same features with complete data sovereignty."
-      },
-      {
-        "q": "How do I cancel?",
-        "a": "Send /cancel to the bot or manage in settings. No questions asked, instant cancellation."
+        "a": "Yes. You can run it on your own server and keep full control of your data."
       }
     ],
+
     "footer.product": "Product",
     "footer.features": "Features",
     "footer.pricing": "Pricing",
@@ -100,51 +133,64 @@
     "footer.connect": "Connect",
     "footer.telegram": "Telegram Bot",
     "footer.github": "GitHub",
-    "footer.copy": "© 2026 Smart Assistant. Built with 🤖 and ☕",
-    "chat.memory.user1": "What did we discuss yesterday about the project?",
-    "chat.memory.bot1": "Yesterday you asked about migrating the database to PostgreSQL. You decided to start with the users table and keep MongoDB for logs temporarily.",
-    "chat.memory.user2": "Right! And what was the deadline?",
-    "chat.memory.bot2": "You mentioned March 15th as the target date for the first phase.",
-    "chat.search.user1": "What's the latest news about GPT-5?",
-    "chat.search.bot1": "Based on recent sources: OpenAI hasn't officially announced GPT-5 yet, but reports suggest it's in internal testing. Key improvements expected include better reasoning and multimodal capabilities. [Source: TechCrunch, The Verge]",
-    "chat.search.user2": "How does it compare to Claude?",
-    "chat.search.bot2": "Both are competitive. Claude focuses on safety and long context (200K tokens), while GPT models excel in tool use and ecosystem. The choice depends on your use case.",
-    "chat.privacy.user1": "Is my data safe here?",
-    "chat.privacy.bot1": "Yes. All your messages are encrypted with AES-256 at rest. I can't access your raw data — only the encrypted context needed for our conversation.",
-    "chat.privacy.user2": "Can I delete everything?",
-    "chat.privacy.bot2": "Absolutely. Send /delete and all your data — messages, memory, settings — will be permanently erased. No backups retained.",
-    "chat.privacy.user3": "What about my API key?",
-    "chat.privacy.bot3": "Your API key is stored encrypted and never logged. You can remove it anytime with /settings.",
-    "chat.header.title": "AI Assistant",
-    "chat.header.subtitle": "bot"
+    "footer.copy": "© 2026 Smart Assistant. Built with 🤖 and ☕"
   },
+
   "ru": {
-    "meta.title": "AI-ассистент для Telegram — Память, Поиск, Приватность",
-    "meta.description": "Telegram AI бот с памятью на 10 дней, веб-поиском и сквозным шифрованием. Начните бесплатно.",
+    "meta.title": "AI-ассистент для Telegram — Помнит, ищет, напоминает",
+    "meta.description": "Telegram AI-бот, который работает в фоне: помнит контекст, ищет в интернете и присылает напоминания.",
     "hero.eyebrow": "AI-ассистент для Telegram",
-    "hero.h1": "Ваш AI в Telegram, который действительно вас помнит",
-    "hero.sub": "10 дней контекста. Веб-поиск. Сквозное шифрование. Ваши данные остаются под вашим контролем.",
+    "hero.h1": "Помнит о вас и следит за важным сам",
+    "hero.sub": "Работает в фоне — ищет, напоминает и отслеживает то, что для вас важно.",
     "hero.cta": "Добавить в Telegram →",
     "hero.note": "Бесплатный старт · Без привязки карты",
-    "features.memory.title": "Память на 10 дней",
-    "features.memory.desc": "Ежедневные саммари + скользящий контекст. Помнит, о чём вы говорили в прошлый вторник.",
-    "features.search.title": "Встроенный веб-поиск",
-    "features.search.desc": "Спрашивайте о чём угодно актуальном. Ответы с источниками, а не галлюцинации.",
-    "features.encrypted.title": "Шифрование по умолчанию",
-    "features.encrypted.desc": "Ваши разговоры зашифрованы в покое. Мы не можем их прочитать. Никто не может.",
-    "features.byok.title": "Свой API-ключ",
-    "features.byok.desc": "Используйте свой ключ OpenAI/Anthropic. Полный контроль, без наценок.",
+
+    "features.memory.title": "Память, которая вас знает",
+    "features.memory.desc": "Помнит контекст между разговорами, чтобы вам не приходилось повторяться.",
+    "features.search.title": "Живой веб-поиск",
+    "features.search.desc": "Находит свежую информацию в реальном времени и держит вас в курсе.",
+    "features.scheduler.title": "Умный планировщик",
+    "features.scheduler.desc": "Задайте напоминания и регулярные задачи один раз, дальше бот сделает всё сам.",
+
     "how.title": "Как это работает",
-    "how.step1.title": "Запустите бота",
-    "how.step1.desc": "Откройте Telegram, нажмите Start. Всё.",
-    "how.step2.title": "Просто общайтесь",
-    "how.step2.desc": "Задавайте вопросы, устраивайте мозговые штурмы, ищите в вебе. Бот помнит контекст днями.",
-    "how.step3.title": "Переходите на Pro",
-    "how.step3.desc": "Разблокируйте длинную память, приоритетные ответы и режим BYOK.",
-    "examples.title": "Примеры работы",
-    "examples.memory.label": "🧠 Память",
-    "examples.search.label": "🔍 Веб-поиск",
-    "examples.privacy.label": "🔐 Приватность",
+    "how.step1.title": "Скажите, что для вас важно",
+    "how.step1.desc": "Опишите цели, планы и предпочтения простыми словами.",
+    "how.step2.title": "Бот берёт рутину на себя",
+    "how.step2.desc": "Он помнит контекст, ищет в интернете и отслеживает обновления в фоне.",
+    "how.step3.title": "Получайте сообщения вовремя",
+    "how.step3.desc": "Бот пришлёт полезные напоминания и обновления ровно тогда, когда нужно.",
+
+    "examples.title": "Примеры из жизни",
+    "examples.work.title": "Обновления по работе",
+    "examples.work.combo": "Планировщик + Память + Веб-поиск",
+    "examples.work.user": "Каждую пятницу присылай новости по Project Alpha и конкурентам",
+    "examples.work.bot": "Отлично! Каждую пятницу буду искать новости по Alpha и следить за конкурентами, о которых вы говорили",
+
+    "examples.shopping.title": "Отслеживание цены",
+    "examples.shopping.combo": "Планировщик + Веб-поиск + Память",
+    "examples.shopping.user": "Следи за ценой iPhone 15, сообщи когда будет ниже $800",
+    "examples.shopping.bot": "Принято. Проверяю каждый день. Напишу, когда будет ≤ $800",
+
+    "examples.family.title": "Планирование для семьи",
+    "examples.family.combo": "Память + Веб-поиск",
+    "examples.family.user": "Я на диете без сахара. Найди рецепт торта на день рождения дочери",
+    "examples.family.bot": "Нашёл 3 рецепта без сахара под вашу диету",
+
+    "examples.car.title": "Обслуживание авто",
+    "examples.car.combo": "Планировщик + Память",
+    "examples.car.user": "Напомни через 3 месяца про ТО. Сейчас пробег 28 000",
+    "examples.car.bot": "Напомню через 3 месяца. Пробег записал",
+
+    "examples.sports.title": "Результат матча",
+    "examples.sports.combo": "Планировщик + Веб-поиск",
+    "examples.sports.user": "Пришли результат матча. Мы играем с Испанией в 21:00",
+    "examples.sports.bot": "Слежу за матчем. Отправлю счёт после финального свистка",
+
+    "examples.entertainment.title": "Оповещения о сериалах",
+    "examples.entertainment.combo": "Планировщик + Веб-поиск",
+    "examples.entertainment.user": "Напомни, когда выйдет 3 сезон Dark, и пришли отзывы",
+    "examples.entertainment.bot": "Отслеживаю релиз. Напишу дату выхода и отзывы",
+
     "pricing.title": "Тарифы",
     "pricing.free.name": "Бесплатный",
     "pricing.free.price": "$0",
@@ -156,6 +202,7 @@
       "Зашифрованное хранилище"
     ],
     "pricing.free.cta": "Начать бесплатно →",
+
     "pricing.pro.name": "Pro",
     "pricing.pro.badge": "Популярный",
     "pricing.pro.price": "$9",
@@ -167,48 +214,52 @@
       "Приоритетное время ответа"
     ],
     "pricing.pro.cta": "Перейти на Pro →",
-    "pricing.byok.name": "BYOK",
+
+    "pricing.byok.name": "Свой ключ",
     "pricing.byok.price": "$4",
     "pricing.byok.per": "/мес",
     "pricing.byok.features": [
       "Всё из Pro",
-      "Свои API-ключи",
-      "Без платы за сообщения",
-      "Возможность self-hosted"
+      "Используйте свой ключ",
+      "Без доплат за сообщения",
+      "Возможность self-host"
     ],
     "pricing.byok.cta": "Начать →",
-    "pricing.note": "Все тарифы включают шифрование. Отмена в любой момент.",
-    "privacy.title": "Приватность — не фича. Это архитектура.",
+    "pricing.note": "Во всех тарифах есть шифрование. Можно отменить в любой момент.",
+
+    "privacy.title": "Ваша приватность под защитой",
     "privacy.items": [
       "🔒 Шифрование AES-256 в покое",
       "🚫 Мы никогда не читаем ваши сообщения",
-      "🏠 Возможность self-hosted",
+      "🏠 Есть вариант self-host",
       "🗑️ Удалите всё командой /delete",
       "📖 Открытый исходный код"
     ],
+
     "faq.title": "Частые вопросы",
     "faq.items": [
       {
         "q": "Мои данные в безопасности?",
-        "a": "Да. Все сообщения зашифрованы AES-256. Мы используем zero-knowledge архитектуру — даже мы не можем прочитать ваши разговоры."
+        "a": "Да. Сообщения шифруются по AES-256, и мы не читаем ваши личные чаты."
       },
       {
-        "q": "Какие модели вы используете?",
-        "a": "Мы используем передовые модели от OpenAI и Anthropic. В режиме BYOK вы сами выбираете модель и провайдера."
+        "q": "Можно ставить напоминания?",
+        "a": "Да. Разовые и регулярные напоминания — бот сам напишет в нужное время."
       },
       {
-        "q": "Что значит «память на 10 дней»?",
-        "a": "Бот создаёт ежедневные саммари разговоров и поддерживает скользящий контекст. Помнит ключевые факты и темы до 10 дней."
+        "q": "Как помогает память?",
+        "a": "Бот помнит контекст между диалогами: ваши предпочтения, планы и текущие задачи."
       },
       {
-        "q": "Можно ли развернуть у себя?",
-        "a": "Да. Мы предоставляем Docker-образ и инструкцию. Self-hosted пользователи получают те же возможности с полным контролем данных."
+        "q": "Он использует свежую информацию?",
+        "a": "Да. Бот ищет данные в интернете в реальном времени и объединяет их с вашим контекстом."
       },
       {
-        "q": "Как отменить подписку?",
-        "a": "Отправьте /cancel боту или управляйте в настройках. Без вопросов, моментальная отмена."
+        "q": "Можно развернуть у себя?",
+        "a": "Да. Можно запустить на своём сервере и полностью контролировать данные."
       }
     ],
+
     "footer.product": "Продукт",
     "footer.features": "Возможности",
     "footer.pricing": "Тарифы",
@@ -219,22 +270,6 @@
     "footer.connect": "Связь",
     "footer.telegram": "Telegram-бот",
     "footer.github": "GitHub",
-    "footer.copy": "© 2026 Smart Assistant. Сделано с 🤖 и ☕",
-    "chat.memory.user1": "Что мы обсуждали вчера по проекту?",
-    "chat.memory.bot1": "Вчера вы спрашивали о миграции базы данных на PostgreSQL. Решили начать с таблицы пользователей и временно оставить MongoDB для логов.",
-    "chat.memory.user2": "Точно! А какой был дедлайн?",
-    "chat.memory.bot2": "Вы упоминали 15 марта как целевую дату для первой фазы.",
-    "chat.search.user1": "Какие последние новости о GPT-5?",
-    "chat.search.bot1": "По последним данным: OpenAI официально не анонсировала GPT-5, но, по сообщениям, модель проходит внутреннее тестирование. Ожидаются улучшения в рассуждениях и мультимодальности. [Источники: TechCrunch, The Verge]",
-    "chat.search.user2": "Как он сравнивается с Claude?",
-    "chat.search.bot2": "Оба конкурентоспособны. Claude фокусируется на безопасности и длинном контексте (200K токенов), GPT — на интеграции инструментов и экосистеме. Выбор зависит от задачи.",
-    "chat.privacy.user1": "Мои данные здесь в безопасности?",
-    "chat.privacy.bot1": "Да. Все ваши сообщения зашифрованы AES-256 в покое. Я не имею доступа к сырым данным — только к зашифрованному контексту для нашего разговора.",
-    "chat.privacy.user2": "Могу ли я удалить всё?",
-    "chat.privacy.bot2": "Безусловно. Отправьте /delete, и все ваши данные — сообщения, память, настройки — будут безвозвратно удалены. Бэкапы не сохраняются.",
-    "chat.privacy.user3": "А что насчёт моего API-ключа?",
-    "chat.privacy.bot3": "Ваш API-ключ хранится в зашифрованном виде и никогда не логируется. Удалить его можно в любой момент через /settings.",
-    "chat.header.title": "AI-ассистент",
-    "chat.header.subtitle": "бот"
+    "footer.copy": "© 2026 Smart Assistant. Сделано с 🤖 и ☕"
   }
 }
