@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Assistant for Telegram — Remembers, Searches, Reminds</title>
-    <meta name="description" content="Your personal AI assistant in Telegram. Remembers what's important, finds fresh info, sets reminders. Start free." />
-    <meta property="og:title" content="Smart Assistant for Telegram" />
-    <meta property="og:description" content="Remembers what matters. Finds what you need. Reminds you on time." />
+    <title>AI Assistant for Telegram — Remembers, Searches, Reminds</title>
+    <meta name="description" content="Telegram AI bot that works in the background: remembers context, searches the web, and sends reminders." />
+    <meta property="og:title" content="AI Assistant for Telegram" />
+    <meta property="og:description" content="Memory + web search + scheduler in one Telegram bot." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -20,130 +20,40 @@
     <script defer src="script.js"></script>
   </head>
   <body>
+    <div class="lang-switcher" id="lang-switcher">
+      <button class="lang-btn" type="button" data-lang="en">EN</button>
+      <button class="lang-btn" type="button" data-lang="ru">RU</button>
+    </div>
+
     <header class="hero" id="top">
       <div class="container hero__inner reveal">
-        <p class="eyebrow">Smart Assistant for Telegram</p>
-        <h1>Remembers what's important —<br>like a good friend</h1>
-        <p class="hero__sub">Remembers what you said. Searches the web. Sets reminders. All in one chat.</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Telegram AI Assistant</p>
+        <h1 data-i18n="hero.h1">Your Telegram AI that actually remembers you</h1>
+        <p class="hero__sub" data-i18n="hero.sub">10 days of context. Web search. End-to-end encryption. No data leaves your control.</p>
         <a class="btn btn--primary" href="https://t.me/smart_assistant_helper_bot?start=ref_landing" target="_blank" rel="noopener noreferrer">
-          <span aria-hidden="true">💬</span> Start in Telegram →
+          <span aria-hidden="true">✈️</span> <span data-i18n="hero.cta">Add to Telegram →</span>
         </a>
-        <p class="hero__note">Free · No card needed · Setup in 10 seconds</p>
+        <p class="hero__note" data-i18n="hero.note">Free to start · No credit card required</p>
       </div>
     </header>
 
-    <section class="examples" id="examples">
-      <div class="container">
-        <h2 class="section-title reveal">What you can do</h2>
-        <div class="grid examples__grid">
-          <article class="card example-card reveal">
-            <div class="example-header">
-              <span class="example-avatar">👵</span>
-              <span class="example-user">For Grandma</span>
-            </div>
-            <div class="example-chat">
-              <div class="message user">Remind me to buy medicine on Monday</div>
-              <div class="message bot">✅ Reminder set for Monday at 9:00. Buy medicine.</div>
-            </div>
-            <p class="example-desc">Just write — and I'll remind you on the right day</p>
-          </article>
-
-          <article class="card example-card reveal">
-            <div class="example-header">
-              <span class="example-avatar">👨‍💼</span>
-              <span class="example-user">For Managers</span>
-            </div>
-            <div class="example-chat">
-              <div class="message user">Compile a report on the EV market for me</div>
-              <div class="message bot">🔍 Found fresh data: sales grew 23%...</div>
-            </div>
-            <p class="example-desc">I find current information and compile summaries</p>
-          </article>
-
-          <article class="card example-card reveal">
-            <div class="example-header">
-              <span class="example-avatar">🎓</span>
-              <span class="example-user">For Students</span>
-            </div>
-            <div class="example-chat">
-              <div class="message user">Summarize this article in simple words</div>
-              <div class="message bot">📄 Main idea: quantum computing...</div>
-            </div>
-            <p class="example-desc">Send a link — I'll explain in plain language</p>
-          </article>
-
-          <article class="card example-card reveal">
-            <div class="example-header">
-              <span class="example-avatar">✈️</span>
-              <span class="example-user">For Travelers</span>
-            </div>
-            <div class="example-chat">
-              <div class="message user">I'm flying to Paris for the weekend</div>
-              <div class="message bot">✅ Got it! Paris, weekend. What to see? Where to eat?</div>
-            </div>
-            <p class="example-desc">I remember your plans and help with advice</p>
-          </article>
-
-          <article class="card example-card reveal">
-            <div class="example-header">
-              <span class="example-avatar">👨‍🍳</span>
-              <span class="example-user">In the Kitchen</span>
-            </div>
-            <div class="example-chat">
-              <div class="message user">How do I make borscht? I have beets, cabbage...</div>
-              <div class="message bot">🍲 Borscht step by step: 1. Sauté beets...</div>
-            </div>
-            <p class="example-desc">Reply by voice or text while you cook</p>
-          </article>
-
-          <article class="card example-card reveal">
-            <div class="example-header">
-              <span class="example-avatar">🏠</span>
-              <span class="example-user">For Family</span>
-            </div>
-            <div class="example-chat">
-              <div class="message user">Sasha is allergic to nuts, Masha is 7 years old</div>
-              <div class="message bot">✅ Got it! I'll warn about recipes with nuts.</div>
-            </div>
-            <p class="example-desc">I remember important details about your loved ones</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="features" id="features">
       <div class="container">
-        <h2 class="section-title reveal">Features</h2>
         <div class="grid features__grid">
           <article class="card reveal">
             <div class="icon" aria-hidden="true">🧠</div>
-            <h3>Remembers You</h3>
-            <p>Keeps important facts: kids' names, preferences, plans. No need to repeat yourself.</p>
+            <h3 data-i18n="features.memory.title">Memory that knows you</h3>
+            <p data-i18n="features.memory.desc">It remembers your preferences and context between conversations, so you don't repeat yourself.</p>
           </article>
           <article class="card reveal">
             <div class="icon" aria-hidden="true">🔍</div>
-            <h3>Searches the Web</h3>
-            <p>Finds fresh information, checks facts, gathers data from different sources.</p>
+            <h3 data-i18n="features.search.title">Live Web Search</h3>
+            <p data-i18n="features.search.desc">Find fresh information in real time with links and updates when things change.</p>
           </article>
           <article class="card reveal">
             <div class="icon" aria-hidden="true">⏰</div>
-            <h3>Sets Reminders</h3>
-            <p>One-time or recurring reminders. "Every Monday at 9 AM" — no problem.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon" aria-hidden="true">🔐</div>
-            <h3>Stores Securely</h3>
-            <p>All messages are encrypted. Nobody, including us, can read your chats.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon" aria-hidden="true">🎤</div>
-            <h3>Understands Voice</h3>
-            <p>Speak instead of type — I convert voice messages to text and reply.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon" aria-hidden="true">📱</div>
-            <h3>Always at Hand</h3>
-            <p>Works in Telegram on any device. No app installation needed.</p>
+            <h3 data-i18n="features.scheduler.title">Smart Scheduler</h3>
+            <p data-i18n="features.scheduler.desc">Set reminders and recurring tasks once, and the bot handles them automatically.</p>
           </article>
         </div>
       </div>
@@ -151,165 +61,174 @@
 
     <section class="how" id="how">
       <div class="container">
-        <h2 class="section-title reveal">How It Works</h2>
+        <h2 class="section-title reveal" data-i18n="how.title">How It Works</h2>
         <div class="steps">
           <div class="step reveal">
             <div class="step__num">1</div>
-            <h4>Start Chatting</h4>
-            <p>Click the button to open Telegram. Then hit Start — and you're ready.</p>
+            <h4 data-i18n="how.step1.title">Start the bot</h4>
+            <p data-i18n="how.step1.desc">Open Telegram, hit Start. That's it.</p>
           </div>
           <div class="step reveal">
             <div class="step__num">2</div>
-            <h4>Tell Me About Yourself</h4>
-            <p>Say your name, what you do — I'll remember and respond personally.</p>
+            <h4 data-i18n="how.step2.title">Just talk</h4>
+            <p data-i18n="how.step2.desc">Ask questions, brainstorm, search the web. It remembers context across days.</p>
           </div>
           <div class="step reveal">
             <div class="step__num">3</div>
-            <h4>Just Chat</h4>
-            <p>Ask questions, request info, set reminders. Like texting a friend.</p>
+            <h4 data-i18n="how.step3.title">Go Pro when ready</h4>
+            <p data-i18n="how.step3.desc">Unlock longer memory, priority responses, and BYOK mode.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="examples" id="examples">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="examples.title">See It in Action</h2>
+        <div class="grid examples__grid">
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">💼</div>
+            <h3 data-i18n="examples.work.title">Work updates</h3>
+            <p class="demo-card__label" data-i18n="examples.work.combo">Scheduler + Memory + Web Search</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.work.user">Every Friday send news about Project Alpha and competitors</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.work.bot">Got it! Every Friday I'll search Alpha news and monitor competitors you told me about</p></div></div>
+          </article>
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">🛍️</div>
+            <h3 data-i18n="examples.shopping.title">Price tracker</h3>
+            <p class="demo-card__label" data-i18n="examples.shopping.combo">Scheduler + Web Search + Memory</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.shopping.user">Monitor iPhone 15 price, notify when below $800</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.shopping.bot">Monitoring. Checking daily. Will message when ≤ $800</p></div></div>
+          </article>
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">🎂</div>
+            <h3 data-i18n="examples.family.title">Family planning</h3>
+            <p class="demo-card__label" data-i18n="examples.family.combo">Memory + Web Search</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.family.user">I'm on sugar-free diet. Find cake recipe for daughter's birthday</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.family.bot">Found 3 sugar-free recipes matching your diet</p></div></div>
+          </article>
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">🚗</div>
+            <h3 data-i18n="examples.car.title">Car service</h3>
+            <p class="demo-card__label" data-i18n="examples.car.combo">Scheduler + Memory</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.car.user">Remind in 3 months about car service. Mileage now 28,000</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.car.bot">Will remind in 3 months. Recorded mileage</p></div></div>
+          </article>
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">⚽</div>
+            <h3 data-i18n="examples.sports.title">Match result</h3>
+            <p class="demo-card__label" data-i18n="examples.sports.combo">Scheduler + Web Search</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.sports.user">Send match result. We play Spain at 9 PM</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.sports.bot">Following match. Will send score after final whistle</p></div></div>
+          </article>
+          <article class="card demo-card reveal">
+            <div class="icon" aria-hidden="true">🎬</div>
+            <h3 data-i18n="examples.entertainment.title">New season alerts</h3>
+            <p class="demo-card__label" data-i18n="examples.entertainment.combo">Scheduler + Web Search</p>
+            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.entertainment.user">Remind when Dark season 3 comes out and reviews</p></div></div>
+            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.entertainment.bot">Tracking release. Will message with date and reviews</p></div></div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="pricing" id="pricing">
       <div class="container">
-        <h2 class="section-title reveal">Pricing</h2>
+        <h2 class="section-title reveal" data-i18n="pricing.title">Pricing</h2>
         <div class="grid pricing__grid">
           <article class="card pricing__card reveal">
-            <h3>Free</h3>
-            <div class="price">$0<span>/mo</span></div>
-            <ul>
-              <li>50 messages per day</li>
-              <li>5 web searches</li>
-              <li>5 voice messages</li>
-              <li>Long-term memory</li>
-              <li>Reminders</li>
+            <h3 data-i18n="pricing.free.name">Free</h3>
+            <div class="price"><span data-i18n="pricing.free.price">$0</span><span data-i18n="pricing.free.per">/mo</span></div>
+            <ul data-i18n-list="pricing.free.features">
+              <li>3-day memory</li>
+              <li>20 messages/day</li>
+              <li>Web search (5/day)</li>
+              <li>Encrypted storage</li>
             </ul>
-            <a class="btn btn--secondary" href="https://t.me/smart_assistant_helper_bot?start=ref_landing">Start Free →</a>
+            <a class="btn btn--secondary" href="https://t.me/smart_assistant_helper_bot?start=ref_landing" data-i18n="pricing.free.cta">Start Free →</a>
           </article>
 
           <article class="card pricing__card pricing__card--popular reveal">
-            <div class="badge">Popular</div>
-            <h3>Pro</h3>
-            <div class="price">$9<span>/mo</span></div>
-            <ul>
-              <li><strong>Unlimited messages</strong></li>
-              <li>Unlimited searches</li>
-              <li>Unlimited voice</li>
-              <li>Priority speed</li>
-              <li>Everything in Free</li>
+            <div class="badge" data-i18n="pricing.pro.badge">Popular</div>
+            <h3 data-i18n="pricing.pro.name">Pro</h3>
+            <div class="price"><span data-i18n="pricing.pro.price">$9</span><span data-i18n="pricing.pro.per">/mo</span></div>
+            <ul data-i18n-list="pricing.pro.features">
+              <li>10-day memory</li>
+              <li>Unlimited messages</li>
+              <li>Unlimited web search</li>
+              <li>Priority response time</li>
             </ul>
-            <a class="btn btn--primary" href="https://t.me/smart_assistant_helper_bot?start=ref_landing_pro">Upgrade to Pro →</a>
+            <a class="btn btn--primary" href="https://t.me/smart_assistant_helper_bot?start=ref_landing_pro" data-i18n="pricing.pro.cta">Upgrade to Pro →</a>
           </article>
 
           <article class="card pricing__card reveal">
-            <h3>Bring Your Key</h3>
-            <div class="price">$4<span>/mo</span></div>
-            <ul>
+            <h3 data-i18n="pricing.byok.name">BYOK</h3>
+            <div class="price"><span data-i18n="pricing.byok.price">$4</span><span data-i18n="pricing.byok.per">/mo</span></div>
+            <ul data-i18n-list="pricing.byok.features">
               <li>Everything in Pro</li>
-              <li>Connect your own API key</li>
-              <li>Choose any AI model</li>
-              <li>Pay for usage directly</li>
+              <li>Use your own API keys</li>
+              <li>No per-message costs</li>
+              <li>Self-hosted option</li>
             </ul>
-            <a class="btn btn--secondary" href="https://t.me/smart_assistant_helper_bot?start=ref_landing_byok">Connect →</a>
+            <a class="btn btn--secondary" href="https://t.me/smart_assistant_helper_bot?start=ref_landing_byok" data-i18n="pricing.byok.cta">Get Started →</a>
           </article>
         </div>
-        <p class="pricing__note">All plans include encryption. Cancel anytime.</p>
+        <p class="pricing__note" data-i18n="pricing.note">All plans include encryption. Cancel anytime.</p>
       </div>
     </section>
 
-    <section class="trust" id="trust">
+    <section class="privacy" id="privacy">
       <div class="container">
-        <h2 class="section-title reveal">Why You Can Trust Us</h2>
-        <div class="trust-grid reveal">
-          <div class="trust-item">
-            <div class="trust-icon">🔒</div>
-            <h4>Encryption</h4>
-            <p>All messages are encrypted. Even we cannot read them.</p>
-          </div>
-          <div class="trust-item">
-            <div class="trust-icon">🗑️</div>
-            <h4>Data Deletion</h4>
-            <p>Command /delete — and all your data is erased forever.</p>
-          </div>
-          <div class="trust-item">
-            <div class="trust-icon">👁️</div>
-            <h4>No Tracking</h4>
-            <p>We don't analyze messages for ads. We don't sell data.</p>
-          </div>
-          <div class="trust-item">
-            <div class="trust-icon">📖</div>
-            <h4>Open Source</h4>
-            <p>Core bot code is open on GitHub. Anyone can verify.</p>
-          </div>
-        </div>
+        <h2 class="section-title reveal" data-i18n="privacy.title">Privacy isn't a feature. It's the architecture.</h2>
+        <ul class="privacy__list reveal" data-i18n-list="privacy.items">
+          <li>🔒 AES-256 encryption at rest</li>
+          <li>🚫 We never read your messages</li>
+          <li>🏠 Self-hosted option available</li>
+          <li>🗑️ Delete everything with /delete</li>
+          <li>📖 Open-source core</li>
+        </ul>
       </div>
     </section>
 
     <section class="faq" id="faq">
       <div class="container">
-        <h2 class="section-title reveal">FAQ</h2>
-        <details class="faq__item reveal">
-          <summary>Are my messages secure?</summary>
-          <p>Yes. All messages are encrypted with a strong algorithm. We cannot read your chats — even if we wanted to.</p>
-        </details>
-        <details class="faq__item reveal">
-          <summary>What does "remembers" mean?</summary>
-          <p>The bot saves important facts you tell it: name, preferences, plans. In the next conversation, it already knows what you talked about before.</p>
-        </details>
-        <details class="faq__item reveal">
-          <summary>Is it free?</summary>
-          <p>Yes, there's a free tier with a 50 messages per day limit. For active use, there are paid plans without limits.</p>
-        </details>
-        <details class="faq__item reveal">
-          <summary>How do I delete all data?</summary>
-          <p>Send the /delete command in the bot chat — and all your data will be permanently erased.</p>
-        </details>
-        <details class="faq__item reveal">
-          <summary>Does it work in other languages?</summary>
-          <p>Yes, the bot understands and responds in many languages. It automatically detects the language of your messages.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container cta__inner reveal">
-        <h2>Try It Right Now</h2>
-        <p>Start free. Setup takes 10 seconds.</p>
-        <a class="btn btn--primary btn--large" href="https://t.me/smart_assistant_helper_bot?start=ref_landing" target="_blank" rel="noopener noreferrer">
-          <span aria-hidden="true">🚀</span> Open in Telegram
-        </a>
+        <h2 class="section-title reveal" data-i18n="faq.title">FAQ</h2>
+        <div data-i18n-faq="faq.items">
+          <details class="faq__item reveal">
+            <summary>Is my data safe?</summary>
+            <p>Yes. All messages are encrypted with AES-256. We use zero-knowledge architecture — even we can't read your conversations.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container footer__grid">
         <div>
-          <h4>Product</h4>
+          <h4 data-i18n="footer.product">Product</h4>
           <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#features" data-i18n="footer.features">Features</a></li>
+            <li><a href="#pricing" data-i18n="footer.pricing">Pricing</a></li>
+            <li><a href="#faq" data-i18n="footer.faq">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">Legal</h4>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.terms">Terms</a></li>
           </ul>
         </div>
         <div>
-          <h4>Connect</h4>
+          <h4 data-i18n="footer.connect">Connect</h4>
           <ul>
-            <li><a href="https://t.me/smart_assistant_helper_bot" target="_blank">Telegram Bot</a></li>
-            <li><a href="https://github.com/drguamok/telegram-ai-bot" target="_blank">GitHub</a></li>
+            <li><a href="https://t.me/smart_assistant_helper_bot" target="_blank" data-i18n="footer.telegram">Telegram Bot</a></li>
+            <li><a href="https://github.com/drguamok/telegram-ai-bot" target="_blank" data-i18n="footer.github">GitHub</a></li>
           </ul>
         </div>
       </div>
       <div class="container footer__copy">
-        <p>© 2026 Smart Assistant</p>
+        <p data-i18n="footer.copy">© 2026 Smart Assistant. Built with 🤖 and ☕</p>
       </div>
     </footer>
   </body>
