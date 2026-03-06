@@ -85,59 +85,124 @@
     <section class="examples" id="examples">
       <div class="container">
         <h2 class="section-title reveal" data-i18n="examples.title">See It in Action</h2>
-        <div class="grid examples__grid">
-          <article class="card demo-card reveal">
-            <div class="icon" aria-hidden="true">💼</div>
-            <h3 data-i18n="examples.work.title">Work updates</h3>
-            <p class="demo-card__label" data-i18n="examples.work.combo">Scheduler + Memory + Web Search</p>
-            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.work.user">Every Friday send news about Project Alpha and competitors</p></div></div>
-            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.work.bot">Got it! Every Friday I'll search Alpha news and monitor competitors you told me about</p></div></div>
+
+        <!-- Carousel wrapper (horizontal scroll on mobile, grid on desktop) -->
+        <div class="tg-carousel" id="tg-carousel">
+
+          <!-- Card 0: Price Tracker -->
+          <article class="tg-card reveal" data-dialog="0">
+            <div class="tg-card__header">
+              <span class="tg-card__icon" data-i18n="examples.dialog0.icon">🛍️</span>
+              <h3 class="tg-card__title" data-i18n="examples.dialog0.title">Price Tracker</h3>
+            </div>
+            <span class="tg-card__combo" data-i18n="examples.dialog0.combo">Scheduler + Web Search + Memory</span>
+            <div class="tg-window">
+              <div class="tg-topbar">
+                <div class="tg-topbar__avatar">🤖</div>
+                <div class="tg-topbar__info">
+                  <span class="tg-topbar__name">Smart Assistant</span>
+                  <span class="tg-topbar__status">bot</span>
+                </div>
+                <div class="tg-topbar__dots">⋮</div>
+              </div>
+              <div class="tg-chat" data-i18n-chat="examples.dialog0.messages">
+              </div>
+              <div class="tg-inputbar">
+                <span class="tg-inputbar__attach">📎</span>
+                <div class="tg-inputbar__field" data-i18n="examples.inputPlaceholder">Message</div>
+                <span class="tg-inputbar__mic">🎤</span>
+              </div>
+            </div>
           </article>
-          <article class="card demo-card reveal">
-            <div class="icon" aria-hidden="true">🛍️</div>
-            <h3 data-i18n="examples.shopping.title">Price tracker</h3>
-            <p class="demo-card__label" data-i18n="examples.shopping.combo">Scheduler + Web Search + Memory</p>
-            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.shopping.user">Monitor iPhone 15 price, notify when below $800</p></div></div>
-            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.shopping.bot">Monitoring. Checking daily. Will message when ≤ $800</p></div></div>
+
+          <!-- Card 1: Personal Memory -->
+          <article class="tg-card reveal" data-dialog="1">
+            <div class="tg-card__header">
+              <span class="tg-card__icon" data-i18n="examples.dialog1.icon">🧠</span>
+              <h3 class="tg-card__title" data-i18n="examples.dialog1.title">Personal Memory</h3>
+            </div>
+            <span class="tg-card__combo" data-i18n="examples.dialog1.combo">Memory</span>
+            <div class="tg-window">
+              <div class="tg-topbar">
+                <div class="tg-topbar__avatar">🤖</div>
+                <div class="tg-topbar__info">
+                  <span class="tg-topbar__name">Smart Assistant</span>
+                  <span class="tg-topbar__status">bot</span>
+                </div>
+                <div class="tg-topbar__dots">⋮</div>
+              </div>
+              <div class="tg-chat" data-i18n-chat="examples.dialog1.messages">
+              </div>
+              <div class="tg-inputbar">
+                <span class="tg-inputbar__attach">📎</span>
+                <div class="tg-inputbar__field" data-i18n="examples.inputPlaceholder">Message</div>
+                <span class="tg-inputbar__mic">🎤</span>
+              </div>
+            </div>
           </article>
-          <article class="card demo-card reveal">
-            <div class="icon" aria-hidden="true">🎂</div>
-            <h3 data-i18n="examples.family.title">Family planning</h3>
-            <p class="demo-card__label" data-i18n="examples.family.combo">Memory + Web Search</p>
-            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.family.user">I'm on sugar-free diet. Find cake recipe for daughter's birthday</p></div></div>
-            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.family.bot">Found 3 sugar-free recipes matching your diet</p></div></div>
+
+          <!-- Card 2: Birthday Planner -->
+          <article class="tg-card reveal" data-dialog="2">
+            <div class="tg-card__header">
+              <span class="tg-card__icon" data-i18n="examples.dialog2.icon">🎂</span>
+              <h3 class="tg-card__title" data-i18n="examples.dialog2.title">Birthday Planner</h3>
+            </div>
+            <span class="tg-card__combo" data-i18n="examples.dialog2.combo">Scheduler + Web Search</span>
+            <div class="tg-window">
+              <div class="tg-topbar">
+                <div class="tg-topbar__avatar">🤖</div>
+                <div class="tg-topbar__info">
+                  <span class="tg-topbar__name">Smart Assistant</span>
+                  <span class="tg-topbar__status">bot</span>
+                </div>
+                <div class="tg-topbar__dots">⋮</div>
+              </div>
+              <div class="tg-chat" data-i18n-chat="examples.dialog2.messages">
+              </div>
+              <div class="tg-inputbar">
+                <span class="tg-inputbar__attach">📎</span>
+                <div class="tg-inputbar__field" data-i18n="examples.inputPlaceholder">Message</div>
+                <span class="tg-inputbar__mic">🎤</span>
+              </div>
+            </div>
           </article>
-          <article class="card demo-card reveal">
-            <div class="icon" aria-hidden="true">🧠</div>
-            <h3 data-i18n="examples.memory.title">Personal memory</h3>
-            <p class="demo-card__label" data-i18n="examples.memory.combo">Memory</p>
-            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.memory.user1">I'm vegetarian</p></div></div>
-            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.memory.bot1">Noted! I'll keep that in mind for recipes and restaurant suggestions</p></div></div>
-            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.memory.user2">Find me a quick dinner recipe</p></div></div>
-            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.memory.bot2">Here are 3 vegetarian recipes under 30 min 🌿</p></div></div>
+
+          <!-- Card 3: Work Digest -->
+          <article class="tg-card reveal" data-dialog="3">
+            <div class="tg-card__header">
+              <span class="tg-card__icon" data-i18n="examples.dialog3.icon">💼</span>
+              <h3 class="tg-card__title" data-i18n="examples.dialog3.title">Work Digest</h3>
+            </div>
+            <span class="tg-card__combo" data-i18n="examples.dialog3.combo">Scheduler + Memory + Web Search</span>
+            <div class="tg-window">
+              <div class="tg-topbar">
+                <div class="tg-topbar__avatar">🤖</div>
+                <div class="tg-topbar__info">
+                  <span class="tg-topbar__name">Smart Assistant</span>
+                  <span class="tg-topbar__status">bot</span>
+                </div>
+                <div class="tg-topbar__dots">⋮</div>
+              </div>
+              <div class="tg-chat" data-i18n-chat="examples.dialog3.messages">
+              </div>
+              <div class="tg-inputbar">
+                <span class="tg-inputbar__attach">📎</span>
+                <div class="tg-inputbar__field" data-i18n="examples.inputPlaceholder">Message</div>
+                <span class="tg-inputbar__mic">🎤</span>
+              </div>
+            </div>
           </article>
-          <article class="card demo-card reveal">
-            <div class="icon" aria-hidden="true">🚗</div>
-            <h3 data-i18n="examples.car.title">Car service</h3>
-            <p class="demo-card__label" data-i18n="examples.car.combo">Scheduler + Memory</p>
-            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.car.user">Remind in 3 months about car service. Mileage now 28,000</p></div></div>
-            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.car.bot">Will remind in 3 months. Recorded mileage</p></div></div>
-          </article>
-          <article class="card demo-card reveal">
-            <div class="icon" aria-hidden="true">⚽</div>
-            <h3 data-i18n="examples.sports.title">Match result</h3>
-            <p class="demo-card__label" data-i18n="examples.sports.combo">Scheduler + Web Search</p>
-            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.sports.user">Send match result. We play Spain at 9 PM</p></div></div>
-            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.sports.bot">Following match. Will send score after final whistle</p></div></div>
-          </article>
-          <article class="card demo-card reveal">
-            <div class="icon" aria-hidden="true">🎬</div>
-            <h3 data-i18n="examples.entertainment.title">New season alerts</h3>
-            <p class="demo-card__label" data-i18n="examples.entertainment.combo">Scheduler + Web Search</p>
-            <div class="chat-row chat-row--user chat-row--single"><div class="chat-msg chat-msg--user"><p data-i18n="examples.entertainment.user">Remind when Dark season 3 comes out and reviews</p></div></div>
-            <div class="chat-row chat-row--bot chat-row--single"><div class="chat-msg chat-msg--bot"><p data-i18n="examples.entertainment.bot">Tracking release. Will message with date and reviews</p></div></div>
-          </article>
+
+        </div><!-- /.tg-carousel -->
+
+        <!-- Dot indicators (mobile only, managed by JS) -->
+        <div class="tg-dots" id="tg-dots">
+          <button class="tg-dot tg-dot--active" data-index="0" aria-label="Dialog 1"></button>
+          <button class="tg-dot" data-index="1" aria-label="Dialog 2"></button>
+          <button class="tg-dot" data-index="2" aria-label="Dialog 3"></button>
+          <button class="tg-dot" data-index="3" aria-label="Dialog 4"></button>
         </div>
+
       </div>
     </section>
 

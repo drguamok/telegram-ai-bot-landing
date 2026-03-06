@@ -16,6 +16,144 @@ const observeRevealElements = (root = document) => {
   root.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 };
 
+// === Telegram Chat Renderer ===
+const TgChat = {
+  render(translations, lang) {
+    const t = translations[lang];
+    if (!t) return;
+
+    document.querySelectorAll('[data-i18n-chat]').forEach((chatEl) => {
+      const key = chatEl.dataset.i18nChat;
+      const messages = t[key];
+      if (!Array.isArray(messages)) return;
+
+      chatEl.innerHTML = '';
+
+      for (let i = 0; i < messages.length; i++) {
+        const msg = messages[i];
+        const prev = messages[i - 1];
+        const next = messages[i + 1];
+
+        const isUser = msg.role === 'user';
+        const sameAsPrev = prev && prev.role === msg.role;
+        const sameAsNext = next && next.role === msg.role;
+        const isFirstInGroup = !sameAsPrev;
+        const isLastInGroup = !sameAsNext;
+
+        // Bot name label (first message in bot group)
+        if (!isUser && isFirstInGroup) {
+          const nameEl = document.createElement('div');
+          nameEl.className = 'tg-bot-name';
+          nameEl.textContent = 'Smart Assistant';
+          chatEl.appendChild(nameEl);
+        }
+
+        // Row
+        const row = document.createElement('div');
+        row.className = `tg-row tg-row--${msg.role}`;
+        if (isLastInGroup) row.classList.add('tg-row--gap');
+
+        // Bot avatar or spacer
+        if (!isUser) {
+          if (isLastInGroup) {
+            const avatar = document.createElement('div');
+            avatar.className = 'tg-avatar';
+            avatar.textContent = '🤖';
+            row.appendChild(avatar);
+          } else {
+            const spacer = document.createElement('div');
+            spacer.className = 'tg-avatar--spacer';
+            row.appendChild(spacer);
+          }
+        }
+
+        // Bubble
+        const bubble = document.createElement('div');
+        let bubbleClass = `tg-bubble tg-bubble--${msg.role}`;
+
+        if (isUser) {
+          if (!isFirstInGroup && !isLastInGroup) bubbleClass = 'tg-bubble tg-bubble--user-group';
+          else if (!isFirstInGroup && isLastInGroup) bubbleClass = 'tg-bubble tg-bubble--user-last';
+          else if (isFirstInGroup && !isLastInGroup) bubbleClass = 'tg-bubble tg-bubble--user tg-bubble--user-group';
+        } else {
+          if (!isFirstInGroup && !isLastInGroup) bubbleClass = 'tg-bubble tg-bubble--bot-group';
+          else if (!isFirstInGroup && isLastInGroup) bubbleClass = 'tg-bubble tg-bubble--bot-last';
+          else if (isFirstInGroup && !isLastInGroup) bubbleClass = 'tg-bubble tg-bubble--bot tg-bubble--bot-group';
+        }
+
+        bubble.className = bubbleClass;
+
+        const textP = document.createElement('p');
+        textP.className = 'tg-bubble__text';
+        textP.textContent = msg.text;
+        bubble.appendChild(textP);
+
+        // Meta: time + checkmarks
+        const meta = document.createElement('div');
+        meta.className = 'tg-bubble__meta';
+        const timeSpan = document.createElement('span');
+        timeSpan.className = 'tg-bubble__time';
+        timeSpan.textContent = msg.time;
+        meta.appendChild(timeSpan);
+
+        if (isUser) {
+          const check = document.createElement('span');
+          check.className = 'tg-bubble__check';
+          check.textContent = '✓✓';
+          meta.appendChild(check);
+        }
+
+        bubble.appendChild(meta);
+        row.appendChild(bubble);
+        chatEl.appendChild(row);
+      }
+
+      // Scroll to top initially
+      chatEl.scrollTop = 0;
+    });
+  }
+};
+
+// === Carousel Dot Indicators ===
+const TgCarousel = {
+  init() {
+    const carousel = document.getElementById('tg-carousel');
+    const dotsContainer = document.getElementById('tg-dots');
+    if (!carousel || !dotsContainer) return;
+
+    const cards = carousel.querySelectorAll('.tg-card');
+    const dots = dotsContainer.querySelectorAll('.tg-dot');
+
+    const observerOptions = {
+      root: carousel,
+      threshold: 0.5
+    };
+
+    const carouselObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = entry.target.dataset.dialog;
+          dots.forEach((dot) => dot.classList.remove('tg-dot--active'));
+          const activeDot = dotsContainer.querySelector(`[data-index="${index}"]`);
+          if (activeDot) activeDot.classList.add('tg-dot--active');
+        }
+      });
+    }, observerOptions);
+
+    cards.forEach((card) => carouselObserver.observe(card));
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        const index = dot.dataset.index;
+        const targetCard = carousel.querySelector(`[data-dialog="${index}"]`);
+        if (targetCard) {
+          targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+      });
+    });
+  }
+};
+
 // === i18n Module ===
 const I18N = {
   translations: null,
@@ -114,6 +252,9 @@ const I18N = {
       btn.classList.toggle('lang-btn--active', btn.dataset.lang === this.currentLang);
     });
 
+    // Render Telegram chat dialogs
+    TgChat.render(this.translations, this.currentLang);
+
     localStorage.setItem('lang', this.currentLang);
   },
 
@@ -176,4 +317,5 @@ document.addEventListener('DOMContentLoaded', () => {
   observeRevealElements();
   initSmoothScroll();
   I18N.init();
+  TgCarousel.init();
 });

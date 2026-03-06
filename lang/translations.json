@@ -7,14 +7,12 @@
     "hero.sub": "Works quietly in the background — searches, reminds, and monitors what matters to you.",
     "hero.cta": "Add to Telegram →",
     "hero.note": "Free to start · Pay with Telegram Stars",
-
     "features.memory.title": "Memory that knows you",
     "features.memory.desc": "It remembers facts about you between sessions — your preferences, diet, car mileage, anything you mention. You can ask it to remember something explicitly, or it picks up on things automatically. View or delete your memories anytime with full control.",
     "features.search.title": "Live Web Search",
     "features.search.desc": "It finds fresh information in real time and keeps you updated.",
     "features.scheduler.title": "Smart Scheduler",
     "features.scheduler.desc": "Set reminders and recurring tasks once, and the bot handles them automatically.",
-
     "how.title": "How It Works",
     "how.step1.title": "Tell it what matters",
     "how.step1.desc": "Share your goals, plans, and preferences in plain words.",
@@ -22,45 +20,7 @@
     "how.step2.desc": "The bot remembers context, searches the web, and tracks updates in the background.",
     "how.step3.title": "Go Pro when ready",
     "how.step3.desc": "Upgrade via Telegram Stars for more messages, photos, and voice.",
-
-    "examples.title": "Real-Life Examples",
-    "examples.work.title": "Work updates",
-    "examples.work.combo": "Scheduler + Memory + Web Search",
-    "examples.work.user": "Every Friday send news about Project Alpha and competitors",
-    "examples.work.bot": "Got it! Every Friday I'll search Alpha news and monitor competitors you told me about",
-
-    "examples.shopping.title": "Price tracker",
-    "examples.shopping.combo": "Scheduler + Web Search + Memory",
-    "examples.shopping.user": "Monitor iPhone 15 price, notify when below $800",
-    "examples.shopping.bot": "Monitoring. Checking daily. Will message when ≤ $800",
-
-    "examples.family.title": "Family planning",
-    "examples.family.combo": "Memory + Web Search",
-    "examples.family.user": "I'm on sugar-free diet. Find cake recipe for daughter's birthday",
-    "examples.family.bot": "Found 3 sugar-free recipes matching your diet",
-
-    "examples.car.title": "Car service",
-    "examples.car.combo": "Scheduler + Memory",
-    "examples.car.user": "Remind in 3 months about car service. Mileage now 28,000",
-    "examples.car.bot": "Will remind in 3 months. Recorded mileage",
-
-    "examples.sports.title": "Match result",
-    "examples.sports.combo": "Scheduler + Web Search",
-    "examples.sports.user": "Send match result. We play Spain at 9 PM",
-    "examples.sports.bot": "Following match. Will send score after final whistle",
-
-    "examples.entertainment.title": "New season alerts",
-    "examples.entertainment.combo": "Scheduler + Web Search",
-    "examples.entertainment.user": "Remind when Dark season 3 comes out and reviews",
-    "examples.entertainment.bot": "Tracking release. Will message with date and reviews",
-
-    "examples.memory.title": "Personal memory",
-    "examples.memory.combo": "Memory",
-    "examples.memory.user1": "I'm vegetarian",
-    "examples.memory.bot1": "Noted! I'll keep that in mind for recipes and restaurant suggestions",
-    "examples.memory.user2": "Find me a quick dinner recipe",
-    "examples.memory.bot2": "Here are 3 vegetarian recipes under 30 min 🌿",
-
+    "examples.title": "See It in Action",
     "pricing.title": "Pricing",
     "pricing.free.name": "Free",
     "pricing.free.price": "0 ⭐",
@@ -74,7 +34,6 @@
       "Encrypted storage"
     ],
     "pricing.free.cta": "Start Free →",
-
     "pricing.pro.name": "Pro",
     "pricing.pro.badge": "Popular",
     "pricing.pro.price": "150 ⭐",
@@ -88,16 +47,13 @@
       "Encrypted storage"
     ],
     "pricing.pro.cta": "Upgrade to Pro →",
-
     "pricing.note": "All plans include encryption. Pay with Telegram Stars. Cancel anytime.",
-
     "privacy.title": "Your privacy stays protected",
     "privacy.items": [
       "🔒 AES-256 encryption at rest",
       "🚫 We never read your messages",
       "🗑️ Delete everything with /delete"
     ],
-
     "faq.title": "FAQ",
     "faq.items": [
       {
@@ -133,7 +89,6 @@
         "a": "You revert to the Free tier. Your data stays encrypted and accessible."
       }
     ],
-
     "footer.product": "Product",
     "footer.features": "Features",
     "footer.pricing": "Pricing",
@@ -144,9 +99,184 @@
     "footer.connect": "Connect",
     "footer.telegram": "Telegram Bot",
     "footer.github": "GitHub",
-    "footer.copy": "© 2026 Smart Assistant. Built with 🤖 and ☕"
+    "footer.copy": "© 2026 Smart Assistant. Built with 🤖 and ☕",
+    "examples.inputPlaceholder": "Message",
+    "examples.dialog0.title": "Price Tracker",
+    "examples.dialog0.combo": "Scheduler + Web Search + Memory",
+    "examples.dialog0.icon": "🛍️",
+    "examples.dialog0.messages": [
+      {
+        "role": "user",
+        "text": "I want to buy an iPhone 15, but not at full price",
+        "time": "14:02"
+      },
+      {
+        "role": "bot",
+        "text": "I can track the price for you! Where do you usually shop — Amazon, Best Buy, Apple Store?",
+        "time": "14:02"
+      },
+      {
+        "role": "user",
+        "text": "Amazon and Best Buy",
+        "time": "14:03"
+      },
+      {
+        "role": "bot",
+        "text": "Got it. What price would work for you?",
+        "time": "14:03"
+      },
+      {
+        "role": "user",
+        "text": "Under $750",
+        "time": "14:03"
+      },
+      {
+        "role": "bot",
+        "text": "✅ I'll check every day. As soon as iPhone 15 drops to ≤ $750 on Amazon or Best Buy — I'll message you right away. Current best price is $829 on Amazon.",
+        "time": "14:04"
+      },
+      {
+        "role": "user",
+        "text": "Great, thanks!",
+        "time": "14:04"
+      },
+      {
+        "role": "bot",
+        "text": "By the way, Amazon has a sale event in 2 weeks. Good chance the price will drop 📉",
+        "time": "14:04"
+      }
+    ],
+    "examples.dialog1.title": "Personal Memory",
+    "examples.dialog1.combo": "Memory",
+    "examples.dialog1.icon": "🧠",
+    "examples.dialog1.messages": [
+      {
+        "role": "user",
+        "text": "I'm vegetarian",
+        "time": "19:15"
+      },
+      {
+        "role": "bot",
+        "text": "Noted! I'll keep that in mind for recipes and restaurants 🌿",
+        "time": "19:15"
+      },
+      {
+        "role": "user",
+        "text": "Find me a dinner recipe, something quick",
+        "time": "19:16"
+      },
+      {
+        "role": "bot",
+        "text": "Here are 3 options under 30 min:\n1. Pesto pasta with cherry tomatoes 🍝 (15 min)\n2. Thai green curry with tofu 🍛 (25 min)\n3. Avocado bruschetta 🥑 (10 min)\nWhich one shall we try?",
+        "time": "19:16"
+      },
+      {
+        "role": "user",
+        "text": "Let's go with curry",
+        "time": "19:17"
+      },
+      {
+        "role": "bot",
+        "text": "🍛 Thai Green Curry with Tofu\n\nIngredients:\n• Tofu 200g\n• Coconut milk 400ml\n• Green curry paste 2 tbsp\n• Veggies (bell pepper, broccoli)\n\nI remember you don't eat meat — all ingredients are plant-based ✅",
+        "time": "19:17"
+      }
+    ],
+    "examples.dialog2.title": "Birthday Planner",
+    "examples.dialog2.combo": "Scheduler + Web Search",
+    "examples.dialog2.icon": "🎂",
+    "examples.dialog2.messages": [
+      {
+        "role": "user",
+        "text": "My daughter's birthday is in a month, she's turning 7",
+        "time": "10:30"
+      },
+      {
+        "role": "bot",
+        "text": "Noted! Need help with the preparations?",
+        "time": "10:30"
+      },
+      {
+        "role": "user",
+        "text": "Yeah, need to find an entertainer and order a cake",
+        "time": "10:31"
+      },
+      {
+        "role": "bot",
+        "text": "Got it. Let's go step by step:\n📋 Birthday checklist:\n1. Entertainer — searching options\n2. Cake — what does she like?\n3. Remind you in advance",
+        "time": "10:31"
+      },
+      {
+        "role": "user",
+        "text": "She loves Elsa",
+        "time": "10:32"
+      },
+      {
+        "role": "bot",
+        "text": "✅ Found 4 entertainers with a Frozen program in your area. Prices from $150 to $350.",
+        "time": "10:32"
+      },
+      {
+        "role": "bot",
+        "text": "Reminders set:\n• 2 weeks before: book entertainer\n• 3 days before: order cake\n• On the day: 🎂",
+        "time": "10:32"
+      },
+      {
+        "role": "user",
+        "text": "Perfect, you're a lifesaver",
+        "time": "10:33"
+      },
+      {
+        "role": "bot",
+        "text": "Happy to help! I'll also search for Frozen-themed party decorations closer to the date 🏰❄️",
+        "time": "10:33"
+      }
+    ],
+    "examples.dialog3.title": "Work Digest",
+    "examples.dialog3.combo": "Scheduler + Memory + Web Search",
+    "examples.dialog3.icon": "💼",
+    "examples.dialog3.messages": [
+      {
+        "role": "user",
+        "text": "Send me an AI news digest every Friday",
+        "time": "09:10"
+      },
+      {
+        "role": "bot",
+        "text": "Sure! What topics are you interested in? General AI news or something specific?",
+        "time": "09:10"
+      },
+      {
+        "role": "user",
+        "text": "LLMs, computer vision, and robotics",
+        "time": "09:11"
+      },
+      {
+        "role": "bot",
+        "text": "Got it. I'll compile a digest covering:\n• 🧠 LLMs — new models, benchmarks\n• 👁️ CV — architectures, datasets\n• 🤖 Robotics — startups, hardware\nEvery Friday at 6:00 PM",
+        "time": "09:11"
+      },
+      {
+        "role": "user",
+        "text": "Make it 10 AM, so I can read it over lunch",
+        "time": "09:12"
+      },
+      {
+        "role": "bot",
+        "text": "Changed to 10:00 AM ✅ First digest arrives this Friday",
+        "time": "09:12"
+      },
+      {
+        "role": "user",
+        "text": "Also add AI regulation news",
+        "time": "09:12"
+      },
+      {
+        "role": "bot",
+        "text": "Added ⚖️ AI regulation & policy to the list. Your digest now covers 4 topics every Friday at 10 AM 📰",
+        "time": "09:13"
+      }
+    ]
   },
-
   "ru": {
     "meta.title": "AI-ассистент для Telegram — Помнит, ищет, напоминает",
     "meta.description": "Telegram AI-бот, который работает в фоне: помнит контекст, ищет в интернете и присылает напоминания.",
@@ -155,14 +285,12 @@
     "hero.sub": "Работает в фоне — ищет, напоминает и отслеживает то, что для вас важно.",
     "hero.cta": "Добавить в Telegram →",
     "hero.note": "Бесплатный старт · Оплата через Telegram Stars",
-
     "features.memory.title": "Память, которая вас знает",
     "features.memory.desc": "Запоминает факты о вас между сессиями — предпочтения, диету, пробег авто, всё что вы упоминаете. Можно попросить запомнить явно, или бот сохранит сам. Полный контроль: можно посмотреть и удалить память в любой момент.",
     "features.search.title": "Живой веб-поиск",
     "features.search.desc": "Находит свежую информацию в реальном времени и держит вас в курсе.",
     "features.scheduler.title": "Умный планировщик",
     "features.scheduler.desc": "Задайте напоминания и регулярные задачи один раз, дальше бот сделает всё сам.",
-
     "how.title": "Как это работает",
     "how.step1.title": "Скажите, что для вас важно",
     "how.step1.desc": "Опишите цели, планы и предпочтения простыми словами.",
@@ -170,45 +298,7 @@
     "how.step2.desc": "Он помнит контекст, ищет в интернете и отслеживает обновления в фоне.",
     "how.step3.title": "Переходите на Pro",
     "how.step3.desc": "Больше сообщений, фото и голосовых — оплата через Telegram Stars.",
-
     "examples.title": "Примеры из жизни",
-    "examples.work.title": "Обновления по работе",
-    "examples.work.combo": "Планировщик + Память + Веб-поиск",
-    "examples.work.user": "Каждую пятницу присылай новости по Project Alpha и конкурентам",
-    "examples.work.bot": "Отлично! Каждую пятницу буду искать новости по Alpha и следить за конкурентами, о которых вы говорили",
-
-    "examples.shopping.title": "Отслеживание цены",
-    "examples.shopping.combo": "Планировщик + Веб-поиск + Память",
-    "examples.shopping.user": "Следи за ценой iPhone 15, сообщи когда будет ниже $800",
-    "examples.shopping.bot": "Принято. Проверяю каждый день. Напишу, когда будет ≤ $800",
-
-    "examples.family.title": "Планирование для семьи",
-    "examples.family.combo": "Память + Веб-поиск",
-    "examples.family.user": "Я на диете без сахара. Найди рецепт торта на день рождения дочери",
-    "examples.family.bot": "Нашёл 3 рецепта без сахара под вашу диету",
-
-    "examples.car.title": "Обслуживание авто",
-    "examples.car.combo": "Планировщик + Память",
-    "examples.car.user": "Напомни через 3 месяца про ТО. Сейчас пробег 28 000",
-    "examples.car.bot": "Напомню через 3 месяца. Пробег записал",
-
-    "examples.sports.title": "Результат матча",
-    "examples.sports.combo": "Планировщик + Веб-поиск",
-    "examples.sports.user": "Пришли результат матча. Мы играем с Испанией в 21:00",
-    "examples.sports.bot": "Слежу за матчем. Отправлю счёт после финального свистка",
-
-    "examples.entertainment.title": "Оповещения о сериалах",
-    "examples.entertainment.combo": "Планировщик + Веб-поиск",
-    "examples.entertainment.user": "Напомни, когда выйдет 3 сезон Dark, и пришли отзывы",
-    "examples.entertainment.bot": "Отслеживаю релиз. Напишу дату выхода и отзывы",
-
-    "examples.memory.title": "Персональная память",
-    "examples.memory.combo": "Память",
-    "examples.memory.user1": "Я вегетарианец",
-    "examples.memory.bot1": "Запомнил! Буду учитывать при поиске рецептов и ресторанов",
-    "examples.memory.user2": "Найди быстрый рецепт на ужин",
-    "examples.memory.bot2": "Вот 3 вегетарианских рецепта до 30 минут 🌿",
-
     "pricing.title": "Тарифы",
     "pricing.free.name": "Бесплатный",
     "pricing.free.price": "0 ⭐",
@@ -222,7 +312,6 @@
       "Зашифрованное хранилище"
     ],
     "pricing.free.cta": "Начать бесплатно →",
-
     "pricing.pro.name": "Pro",
     "pricing.pro.badge": "Популярный",
     "pricing.pro.price": "150 ⭐",
@@ -236,16 +325,13 @@
       "Зашифрованное хранилище"
     ],
     "pricing.pro.cta": "Перейти на Pro →",
-
     "pricing.note": "Все тарифы включают шифрование. Оплата через Telegram Stars. Отмена в любой момент.",
-
     "privacy.title": "Ваша приватность под защитой",
     "privacy.items": [
       "🔒 Шифрование AES-256 в покое",
       "🚫 Мы никогда не читаем ваши сообщения",
       "🗑️ Удалите всё командой /delete"
     ],
-
     "faq.title": "Частые вопросы",
     "faq.items": [
       {
@@ -281,7 +367,6 @@
         "a": "Вернётесь на бесплатный тариф. Данные останутся зашифрованными и доступными."
       }
     ],
-
     "footer.product": "Продукт",
     "footer.features": "Возможности",
     "footer.pricing": "Тарифы",
@@ -292,6 +377,182 @@
     "footer.connect": "Связь",
     "footer.telegram": "Telegram-бот",
     "footer.github": "GitHub",
-    "footer.copy": "© 2026 Smart Assistant. Сделано с 🤖 и ☕"
+    "footer.copy": "© 2026 Smart Assistant. Сделано с 🤖 и ☕",
+    "examples.inputPlaceholder": "Сообщение",
+    "examples.dialog0.title": "Отслеживание цены",
+    "examples.dialog0.combo": "Планировщик + Веб-поиск + Память",
+    "examples.dialog0.icon": "🛍️",
+    "examples.dialog0.messages": [
+      {
+        "role": "user",
+        "text": "Хочу купить iPhone 15, но не за полную цену",
+        "time": "14:02"
+      },
+      {
+        "role": "bot",
+        "text": "Могу следить за ценой! Где обычно покупаете — Wildberries, Ozon, re:Store?",
+        "time": "14:02"
+      },
+      {
+        "role": "user",
+        "text": "ВБ и Озон",
+        "time": "14:03"
+      },
+      {
+        "role": "bot",
+        "text": "Запомнил. Какая цена вас устроит?",
+        "time": "14:03"
+      },
+      {
+        "role": "user",
+        "text": "До 65 000₽",
+        "time": "14:03"
+      },
+      {
+        "role": "bot",
+        "text": "✅ Буду проверять каждый день. Как только iPhone 15 будет ≤ 65 000₽ на WB или Ozon — сразу напишу. Сейчас лучшая цена 71 200₽ на Ozon.",
+        "time": "14:04"
+      },
+      {
+        "role": "user",
+        "text": "Супер, спасибо!",
+        "time": "14:04"
+      },
+      {
+        "role": "bot",
+        "text": "Кстати, у Ozon через 2 недели распродажа. Шанс, что цена упадёт, высокий 📉",
+        "time": "14:04"
+      }
+    ],
+    "examples.dialog1.title": "Персональная память",
+    "examples.dialog1.combo": "Память",
+    "examples.dialog1.icon": "🧠",
+    "examples.dialog1.messages": [
+      {
+        "role": "user",
+        "text": "Я вегетарианец",
+        "time": "19:15"
+      },
+      {
+        "role": "bot",
+        "text": "Запомнил! Буду учитывать при рецептах и ресторанах 🌿",
+        "time": "19:15"
+      },
+      {
+        "role": "user",
+        "text": "Найди рецепт на ужин, что-то быстрое",
+        "time": "19:16"
+      },
+      {
+        "role": "bot",
+        "text": "Вот 3 варианта до 30 минут:\n1. Паста с песто и черри 🍝 (15 мин)\n2. Тайский карри с тофу 🍛 (25 мин)\n3. Брускетты с авокадо 🥑 (10 мин)\nКакой попробуем?",
+        "time": "19:16"
+      },
+      {
+        "role": "user",
+        "text": "Давай карри",
+        "time": "19:17"
+      },
+      {
+        "role": "bot",
+        "text": "🍛 Тайский зелёный карри с тофу\n\nИнгредиенты:\n• Тофу 200г\n• Кокосовое молоко 400мл\n• Зелёная паста карри 2 ст.л.\n• Овощи (перец, брокколи)\n\nЯ помню, что вы не едите мясо — все ингредиенты растительные ✅",
+        "time": "19:17"
+      }
+    ],
+    "examples.dialog2.title": "Планирование ДР",
+    "examples.dialog2.combo": "Планировщик + Веб-поиск",
+    "examples.dialog2.icon": "🎂",
+    "examples.dialog2.messages": [
+      {
+        "role": "user",
+        "text": "У дочери день рождения через месяц, ей будет 7",
+        "time": "10:30"
+      },
+      {
+        "role": "bot",
+        "text": "Запомнил! Нужна помощь с подготовкой?",
+        "time": "10:30"
+      },
+      {
+        "role": "user",
+        "text": "Да, нужно найти аниматора и заказать торт",
+        "time": "10:31"
+      },
+      {
+        "role": "bot",
+        "text": "Понял. Давайте по порядку:\n📋 Чек-лист на ДР:\n1. Аниматор — ищу варианты\n2. Торт — какой она любит?\n3. Напомнить заранее",
+        "time": "10:31"
+      },
+      {
+        "role": "user",
+        "text": "Она любит Эльзу",
+        "time": "10:32"
+      },
+      {
+        "role": "bot",
+        "text": "✅ Нашёл 4 аниматора с программой «Холодное сердце» в вашем городе. Цены от 5 000 до 12 000₽.",
+        "time": "10:32"
+      },
+      {
+        "role": "bot",
+        "text": "Напоминания поставил:\n• За 2 недели: забронировать аниматора\n• За 3 дня: заказать торт\n• В день ДР: 🎂",
+        "time": "10:32"
+      },
+      {
+        "role": "user",
+        "text": "Идеально, спасибо огромное",
+        "time": "10:33"
+      },
+      {
+        "role": "bot",
+        "text": "Рад помочь! Ближе к дате поищу ещё декор в стиле «Холодное сердце» 🏰❄️",
+        "time": "10:33"
+      }
+    ],
+    "examples.dialog3.title": "Рабочий дайджест",
+    "examples.dialog3.combo": "Планировщик + Память + Веб-поиск",
+    "examples.dialog3.icon": "💼",
+    "examples.dialog3.messages": [
+      {
+        "role": "user",
+        "text": "Каждую пятницу присылай дайджест по AI-новостям",
+        "time": "09:10"
+      },
+      {
+        "role": "bot",
+        "text": "Отлично! Какие темы в приоритете? Общие AI-новости или что-то конкретное?",
+        "time": "09:10"
+      },
+      {
+        "role": "user",
+        "text": "LLM, компьютерное зрение и робототехника",
+        "time": "09:11"
+      },
+      {
+        "role": "bot",
+        "text": "Принял. Буду собирать дайджест по:\n• 🧠 LLM — новые модели, бенчмарки\n• 👁️ CV — архитектуры, датасеты\n• 🤖 Робототехника — стартапы, hardware\nКаждую пятницу в 18:00",
+        "time": "09:11"
+      },
+      {
+        "role": "user",
+        "text": "В 10 утра лучше, чтобы за обедом почитать",
+        "time": "09:12"
+      },
+      {
+        "role": "bot",
+        "text": "Поменял на 10:00 ✅ Первый дайджест придёт в эту пятницу",
+        "time": "09:12"
+      },
+      {
+        "role": "user",
+        "text": "Ещё добавь новости по регулированию AI",
+        "time": "09:12"
+      },
+      {
+        "role": "bot",
+        "text": "Добавил ⚖️ Регулирование AI в список. Теперь дайджест по 4 темам каждую пятницу в 10:00 📰",
+        "time": "09:13"
+      }
+    ]
   }
 }
