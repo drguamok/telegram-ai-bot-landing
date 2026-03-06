@@ -6,7 +6,7 @@
     "hero.h1": "Remembers you and watches for important things on its own",
     "hero.sub": "Works quietly in the background — searches, reminds, and monitors what matters to you.",
     "hero.cta": "Add to Telegram →",
-    "hero.note": "Free to start · No credit card required",
+    "hero.note": "Free to start · Pay with Telegram Stars",
 
     "features.memory.title": "Memory that knows you",
     "features.memory.desc": "It remembers context between conversations, so you don't need to repeat yourself.",
@@ -20,8 +20,8 @@
     "how.step1.desc": "Share your goals, plans, and preferences in plain words.",
     "how.step2.title": "It handles the routine",
     "how.step2.desc": "The bot remembers context, searches the web, and tracks updates in the background.",
-    "how.step3.title": "Get updates at the right moment",
-    "how.step3.desc": "Receive reminders and useful alerts exactly when you need them.",
+    "how.step3.title": "Go Pro when ready",
+    "how.step3.desc": "Upgrade via Telegram Stars for more messages, photos, and voice.",
 
     "examples.title": "Real-Life Examples",
     "examples.work.title": "Work updates",
@@ -56,47 +56,39 @@
 
     "pricing.title": "Pricing",
     "pricing.free.name": "Free",
-    "pricing.free.price": "$0",
-    "pricing.free.per": "/mo",
+    "pricing.free.price": "0 ⭐",
+    "pricing.free.per": "",
     "pricing.free.features": [
-      "3-day memory",
-      "20 messages/day",
-      "Web search (5/day)",
+      "10-day memory",
+      "30 messages/day",
+      "3 photos/day",
+      "3 voice messages/day",
+      "Web search",
       "Encrypted storage"
     ],
     "pricing.free.cta": "Start Free →",
 
     "pricing.pro.name": "Pro",
     "pricing.pro.badge": "Popular",
-    "pricing.pro.price": "$9",
+    "pricing.pro.price": "150 ⭐",
     "pricing.pro.per": "/mo",
     "pricing.pro.features": [
       "10-day memory",
-      "Unlimited messages",
-      "Unlimited web search",
-      "Priority response time"
+      "150 messages/day",
+      "15 photos/day",
+      "15 voice messages/day",
+      "Web search",
+      "Encrypted storage"
     ],
     "pricing.pro.cta": "Upgrade to Pro →",
 
-    "pricing.byok.name": "Your Key",
-    "pricing.byok.price": "$4",
-    "pricing.byok.per": "/mo",
-    "pricing.byok.features": [
-      "Everything in Pro",
-      "Use your own key",
-      "No extra message fees",
-      "Self-host option"
-    ],
-    "pricing.byok.cta": "Get Started →",
-    "pricing.note": "All plans include encryption. Cancel anytime.",
+    "pricing.note": "All plans include encryption. Pay with Telegram Stars. Cancel anytime.",
 
     "privacy.title": "Your privacy stays protected",
     "privacy.items": [
       "🔒 AES-256 encryption at rest",
       "🚫 We never read your messages",
-      "🏠 Self-host option available",
-      "🗑️ Delete everything with /delete",
-      "📖 Open-source core"
+      "🗑️ Delete everything with /delete"
     ],
 
     "faq.title": "FAQ",
@@ -110,16 +102,24 @@
         "a": "Yes. Set one-time or recurring reminders, and the bot will message you at the right time."
       },
       {
-        "q": "How does memory help me?",
-        "a": "It remembers your context between chats, like preferences, plans, and ongoing tasks."
+        "q": "How does memory work?",
+        "a": "The bot remembers your context between chats — preferences, plans, and ongoing tasks. Memory is the same for Free and Pro."
       },
       {
-        "q": "Does it use fresh information?",
-        "a": "Yes. It can search the web in real time and combine results with your saved context."
+        "q": "What are the message limits?",
+        "a": "Free: 30 messages, 3 photos, and 3 voice messages per day. Pro: 150 messages, 15 photos, and 15 voice messages per day."
       },
       {
-        "q": "Can I self-host this?",
-        "a": "Yes. You can run it on your own server and keep full control of your data."
+        "q": "Can I send photos and voice messages?",
+        "a": "Yes! The bot understands photos and voice messages. Limits depend on your plan."
+      },
+      {
+        "q": "How do I pay for Pro?",
+        "a": "Pro costs 150 Telegram Stars per month (~$2.50). You pay directly inside Telegram — no credit card needed."
+      },
+      {
+        "q": "What happens if I stop paying?",
+        "a": "You revert to the Free tier. Your data stays encrypted and accessible."
       }
     ],
 
@@ -143,7 +143,7 @@
     "hero.h1": "Помнит о вас и следит за важным сам",
     "hero.sub": "Работает в фоне — ищет, напоминает и отслеживает то, что для вас важно.",
     "hero.cta": "Добавить в Telegram →",
-    "hero.note": "Бесплатный старт · Без привязки карты",
+    "hero.note": "Бесплатный старт · Оплата через Telegram Stars",
 
     "features.memory.title": "Память, которая вас знает",
     "features.memory.desc": "Помнит контекст между разговорами, чтобы вам не приходилось повторяться.",
@@ -157,8 +157,8 @@
     "how.step1.desc": "Опишите цели, планы и предпочтения простыми словами.",
     "how.step2.title": "Бот берёт рутину на себя",
     "how.step2.desc": "Он помнит контекст, ищет в интернете и отслеживает обновления в фоне.",
-    "how.step3.title": "Получайте сообщения вовремя",
-    "how.step3.desc": "Бот пришлёт полезные напоминания и обновления ровно тогда, когда нужно.",
+    "how.step3.title": "Переходите на Pro",
+    "how.step3.desc": "Больше сообщений, фото и голосовых — оплата через Telegram Stars.",
 
     "examples.title": "Примеры из жизни",
     "examples.work.title": "Обновления по работе",
@@ -193,47 +193,39 @@
 
     "pricing.title": "Тарифы",
     "pricing.free.name": "Бесплатный",
-    "pricing.free.price": "$0",
-    "pricing.free.per": "/мес",
+    "pricing.free.price": "0 ⭐",
+    "pricing.free.per": "",
     "pricing.free.features": [
-      "Память на 3 дня",
-      "20 сообщений/день",
-      "Веб-поиск (5/день)",
+      "Память на 10 дней",
+      "30 сообщений/день",
+      "3 фото/день",
+      "3 голосовых/день",
+      "Веб-поиск",
       "Зашифрованное хранилище"
     ],
     "pricing.free.cta": "Начать бесплатно →",
 
     "pricing.pro.name": "Pro",
     "pricing.pro.badge": "Популярный",
-    "pricing.pro.price": "$9",
+    "pricing.pro.price": "150 ⭐",
     "pricing.pro.per": "/мес",
     "pricing.pro.features": [
       "Память на 10 дней",
-      "Безлимитные сообщения",
-      "Безлимитный веб-поиск",
-      "Приоритетное время ответа"
+      "150 сообщений/день",
+      "15 фото/день",
+      "15 голосовых/день",
+      "Веб-поиск",
+      "Зашифрованное хранилище"
     ],
     "pricing.pro.cta": "Перейти на Pro →",
 
-    "pricing.byok.name": "Свой ключ",
-    "pricing.byok.price": "$4",
-    "pricing.byok.per": "/мес",
-    "pricing.byok.features": [
-      "Всё из Pro",
-      "Используйте свой ключ",
-      "Без доплат за сообщения",
-      "Возможность self-host"
-    ],
-    "pricing.byok.cta": "Начать →",
-    "pricing.note": "Во всех тарифах есть шифрование. Можно отменить в любой момент.",
+    "pricing.note": "Все тарифы включают шифрование. Оплата через Telegram Stars. Отмена в любой момент.",
 
     "privacy.title": "Ваша приватность под защитой",
     "privacy.items": [
       "🔒 Шифрование AES-256 в покое",
       "🚫 Мы никогда не читаем ваши сообщения",
-      "🏠 Есть вариант self-host",
-      "🗑️ Удалите всё командой /delete",
-      "📖 Открытый исходный код"
+      "🗑️ Удалите всё командой /delete"
     ],
 
     "faq.title": "Частые вопросы",
@@ -244,19 +236,27 @@
       },
       {
         "q": "Можно ставить напоминания?",
-        "a": "Да. Разовые и регулярные напоминания — бот сам напишет в нужное время."
+        "a": "Да. Разовые и регулярные — бот сам напишет в нужное время."
       },
       {
-        "q": "Как помогает память?",
-        "a": "Бот помнит контекст между диалогами: ваши предпочтения, планы и текущие задачи."
+        "q": "Как работает память?",
+        "a": "Бот помнит контекст между диалогами: предпочтения, планы и задачи. Память одинаковая для Free и Pro."
       },
       {
-        "q": "Он использует свежую информацию?",
-        "a": "Да. Бот ищет данные в интернете в реальном времени и объединяет их с вашим контекстом."
+        "q": "Какие лимиты сообщений?",
+        "a": "Free: 30 сообщений, 3 фото и 3 голосовых в день. Pro: 150 сообщений, 15 фото и 15 голосовых в день."
       },
       {
-        "q": "Можно развернуть у себя?",
-        "a": "Да. Можно запустить на своём сервере и полностью контролировать данные."
+        "q": "Можно отправлять фото и голосовые?",
+        "a": "Да! Бот понимает фото и голосовые сообщения. Лимиты зависят от тарифа."
+      },
+      {
+        "q": "Как оплатить Pro?",
+        "a": "Pro стоит 150 Telegram Stars в месяц (~$2.50). Оплата прямо в Telegram — без привязки карты."
+      },
+      {
+        "q": "Что будет, если перестану платить?",
+        "a": "Вернётесь на бесплатный тариф. Данные останутся зашифрованными и доступными."
       }
     ],
 

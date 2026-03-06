@@ -133,11 +133,13 @@ const I18N = {
 
   renderFallbackFAQ() {
     const fallbackFAQs = [
-      { q: 'Is my data safe?', a: 'Yes. All messages are encrypted with AES-256. We use zero-knowledge architecture — even we can\'t read your conversations.' },
-      { q: 'Do you store my messages?', a: 'Only encrypted summaries for memory. Raw messages are discarded after processing. You can delete everything anytime with /delete.' },
-      { q: 'Can I use my own API key?', a: 'Yes. BYOK (Bring Your Own Key) mode lets you connect your OpenAI or Anthropic key. We add no markup.' },
-      { q: 'What happens if I stop paying?', a: 'You revert to Free tier. Your data stays encrypted and you can export anything before canceling.' },
-      { q: 'Is it open source?', a: 'The core is open source. You can self-host or audit the code on GitHub.' }
+      { q: 'Is my data safe?', a: 'Yes. Messages are encrypted with AES-256 and we never read your private chats.' },
+      { q: 'Can it send reminders?', a: 'Yes. Set one-time or recurring reminders, and the bot will message you at the right time.' },
+      { q: 'How does memory work?', a: 'The bot remembers your context between chats — preferences, plans, and ongoing tasks. Memory is the same for Free and Pro.' },
+      { q: 'What are the message limits?', a: 'Free: 30 messages, 3 photos, and 3 voice messages per day. Pro: 150 messages, 15 photos, and 15 voice messages per day.' },
+      { q: 'Can I send photos and voice messages?', a: 'Yes! The bot understands photos and voice messages. Limits depend on your plan.' },
+      { q: 'How do I pay for Pro?', a: 'Pro costs 150 Telegram Stars per month (~$2.50). You pay directly inside Telegram — no credit card needed.' },
+      { q: 'What happens if I stop paying?', a: 'You revert to the Free tier. Your data stays encrypted and accessible.' }
     ];
 
     document.querySelectorAll('[data-i18n-faq]').forEach((el) => {
