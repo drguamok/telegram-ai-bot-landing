@@ -26,7 +26,7 @@
     "pricing.free.price": "0 ⭐",
     "pricing.free.per": "",
     "pricing.free.features": [
-      "10-day memory",
+      "Persistent memory",
       "30 messages/day",
       "3 photos/day",
       "3 voice messages/day",
@@ -39,7 +39,7 @@
     "pricing.pro.price": "150 ⭐",
     "pricing.pro.per": "/mo",
     "pricing.pro.features": [
-      "10-day memory",
+      "Persistent memory",
       "150 messages/day",
       "15 photos/day",
       "15 voice messages/day",
@@ -275,6 +275,103 @@
         "text": "Added ⚖️ AI regulation & policy to the list. Your digest now covers 4 topics every Friday at 10 AM 📰",
         "time": "09:13"
       }
+    ],
+
+    "examples.dialog4.title": "Photo Helper",
+    "examples.dialog4.combo": "Photo + Memory + Web Search",
+    "examples.dialog4.icon": "📸",
+    "examples.dialog4.messages": [
+      {
+        "role": "user",
+        "text": "📷 [photo of a houseplant]",
+        "time": "11:20"
+      },
+      {
+        "role": "user",
+        "text": "What is this plant? The leaves are turning yellow",
+        "time": "11:20"
+      },
+      {
+        "role": "bot",
+        "text": "This is a Spathiphyllum (Peace Lily) 🌿\n\nYellow leaves usually mean:\n• Overwatering (most common)\n• Direct sunlight (they prefer shade)\n• Needs repotting",
+        "time": "11:21"
+      },
+      {
+        "role": "user",
+        "text": "I water it every day, is that too much?",
+        "time": "11:21"
+      },
+      {
+        "role": "bot",
+        "text": "Yes, that's too often! Peace Lily likes moist but not soggy soil. Water once every 5–7 days, when the top inch is dry.",
+        "time": "11:21"
+      },
+      {
+        "role": "user",
+        "text": "Got it. Can you remind me?",
+        "time": "11:22"
+      },
+      {
+        "role": "bot",
+        "text": "✅ Reminder set: every 5 days I'll ping you to water the Peace Lily.\n\nI've also saved that you have this plant — if you send a photo of any other plant, I'll identify it too 🪴",
+        "time": "11:22"
+      },
+      {
+        "role": "user",
+        "text": "Awesome! You're like a plant doctor",
+        "time": "11:23"
+      },
+      {
+        "role": "bot",
+        "text": "Happy to help! 🌱 By the way, Peace Lilies bloom in spring — I'll remind you to fertilize in a month",
+        "time": "11:23"
+      }
+    ],
+
+    "examples.dialog5.title": "Study Helper",
+    "examples.dialog5.combo": "Memory + Scheduler + Web Search",
+    "examples.dialog5.icon": "📚",
+    "examples.dialog5.messages": [
+      {
+        "role": "user",
+        "text": "I have a history exam in 2 weeks, need to prep",
+        "time": "16:40"
+      },
+      {
+        "role": "bot",
+        "text": "Let's plan this! What topics does the exam cover?",
+        "time": "16:40"
+      },
+      {
+        "role": "user",
+        "text": "WW2, Cold War, and decolonization",
+        "time": "16:41"
+      },
+      {
+        "role": "bot",
+        "text": "Got it. Here's a study plan:\n\n📅 Week 1:\n• Mon-Tue: WW2 (causes, key battles, aftermath)\n• Wed-Thu: Cold War (Berlin Wall, Cuban crisis, arms race)\n• Fri: Decolonization (Africa, Asia, key figures)\n\n📅 Week 2:\n• Mon-Wed: Review + practice questions\n• Thu: Mock exam\n• Fri: Rest before exam day",
+        "time": "16:42"
+      },
+      {
+        "role": "user",
+        "text": "Can you send me reminders to study?",
+        "time": "16:42"
+      },
+      {
+        "role": "bot",
+        "text": "✅ Daily reminders set at 5 PM with the topic for that day.\n\nI'll also send quiz questions to test yourself each evening 📝",
+        "time": "16:43"
+      },
+      {
+        "role": "user",
+        "text": "What was the main cause of the Cold War?",
+        "time": "16:43"
+      },
+      {
+        "role": "bot",
+        "text": "The main cause was ideological rivalry between the US (capitalism) and the USSR (communism) after WW2.\n\nKey factors:\n• Division of Europe (Iron Curtain)\n• Nuclear weapons race\n• Competing spheres of influence\n\nWant me to go deeper into any of these? 🎓",
+        "time": "16:44"
+      }
     ]
   },
   "ru": {
@@ -304,7 +401,7 @@
     "pricing.free.price": "0 ⭐",
     "pricing.free.per": "",
     "pricing.free.features": [
-      "Память на 10 дней",
+      "Постоянная память",
       "30 сообщений/день",
       "3 фото/день",
       "3 голосовых/день",
@@ -317,7 +414,7 @@
     "pricing.pro.price": "150 ⭐",
     "pricing.pro.per": "/мес",
     "pricing.pro.features": [
-      "Память на 10 дней",
+      "Постоянная память",
       "150 сообщений/день",
       "15 фото/день",
       "15 голосовых/день",
@@ -552,6 +649,103 @@
         "role": "bot",
         "text": "Добавил ⚖️ Регулирование AI в список. Теперь дайджест по 4 темам каждую пятницу в 10:00 📰",
         "time": "09:13"
+      }
+    ],
+
+    "examples.dialog4.title": "Фото-помощник",
+    "examples.dialog4.combo": "Фото + Память + Веб-поиск",
+    "examples.dialog4.icon": "📸",
+    "examples.dialog4.messages": [
+      {
+        "role": "user",
+        "text": "📷 [фото комнатного растения]",
+        "time": "11:20"
+      },
+      {
+        "role": "user",
+        "text": "Что это за растение? Листья желтеют",
+        "time": "11:20"
+      },
+      {
+        "role": "bot",
+        "text": "Это спатифиллум (\"Женское счастье\") 🌿\n\nЖёлтые листья обычно значат:\n• Перелив (самая частая причина)\n• Прямой солнечный свет (любит тень)\n• Нужна пересадка",
+        "time": "11:21"
+      },
+      {
+        "role": "user",
+        "text": "Я поливаю каждый день, это много?",
+        "time": "11:21"
+      },
+      {
+        "role": "bot",
+        "text": "Да, это слишком часто! Спатифиллум любит влажную, но не мокрую землю. Поливайте раз в 5–7 дней, когда верхний слой подсохнет.",
+        "time": "11:21"
+      },
+      {
+        "role": "user",
+        "text": "Понял. Можешь напоминать?",
+        "time": "11:22"
+      },
+      {
+        "role": "bot",
+        "text": "✅ Напоминание: каждые 5 дней буду писать про полив.\n\nЗапомнил, что у вас спатифиллум — если пришлёте фото другого растения, тоже определю 🪴",
+        "time": "11:22"
+      },
+      {
+        "role": "user",
+        "text": "Круто! Ты как доктор для растений",
+        "time": "11:23"
+      },
+      {
+        "role": "bot",
+        "text": "Стараюсь! 🌱 Кстати, спатифиллум цветёт весной — через месяц напомню про удобрение",
+        "time": "11:23"
+      }
+    ],
+
+    "examples.dialog5.title": "Помощник в учёбе",
+    "examples.dialog5.combo": "Память + Планировщик + Веб-поиск",
+    "examples.dialog5.icon": "📚",
+    "examples.dialog5.messages": [
+      {
+        "role": "user",
+        "text": "Через 2 недели экзамен по истории, нужно подготовиться",
+        "time": "16:40"
+      },
+      {
+        "role": "bot",
+        "text": "Давайте спланируем! Какие темы на экзамене?",
+        "time": "16:40"
+      },
+      {
+        "role": "user",
+        "text": "ВОВ, Холодная война и распад СССР",
+        "time": "16:41"
+      },
+      {
+        "role": "bot",
+        "text": "Понял. Вот план подготовки:\n\n📅 Неделя 1:\n• Пн-Вт: ВОВ (причины, ключевые сражения, итоги)\n• Ср-Чт: Холодная война (Берлинская стена, Карибский кризис, гонка вооружений)\n• Пт: Распад СССР (перестройка, путч, Беловежские соглашения)\n\n📅 Неделя 2:\n• Пн-Ср: Повторение + тестовые вопросы\n• Чт: Пробный экзамен\n• Пт: Отдых перед экзаменом",
+        "time": "16:42"
+      },
+      {
+        "role": "user",
+        "text": "Можешь присылать напоминания готовиться?",
+        "time": "16:42"
+      },
+      {
+        "role": "bot",
+        "text": "✅ Ежедневные напоминания в 17:00 с темой на этот день.\n\nВечером буду присылать тестовые вопросы для самопроверки 📝",
+        "time": "16:43"
+      },
+      {
+        "role": "user",
+        "text": "Какая главная причина Холодной войны?",
+        "time": "16:43"
+      },
+      {
+        "role": "bot",
+        "text": "Главная причина — идеологическое противостояние США (капитализм) и СССР (коммунизм) после ВОВ.\n\nКлючевые факторы:\n• Раздел Европы (Железный занавес)\n• Ядерная гонка\n• Борьба за сферы влияния\n\nРассказать подробнее про любой из пунктов? 🎓",
+        "time": "16:44"
       }
     ]
   }
