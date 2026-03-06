@@ -9,7 +9,7 @@
     "hero.note": "Free to start · Pay with Telegram Stars",
 
     "features.memory.title": "Memory that knows you",
-    "features.memory.desc": "It remembers context between conversations, so you don't need to repeat yourself.",
+    "features.memory.desc": "It remembers facts about you between sessions — your preferences, diet, car mileage, anything you mention. You can ask it to remember something explicitly, or it picks up on things automatically. View or delete your memories anytime with full control.",
     "features.search.title": "Live Web Search",
     "features.search.desc": "It finds fresh information in real time and keeps you updated.",
     "features.scheduler.title": "Smart Scheduler",
@@ -53,6 +53,13 @@
     "examples.entertainment.combo": "Scheduler + Web Search",
     "examples.entertainment.user": "Remind when Dark season 3 comes out and reviews",
     "examples.entertainment.bot": "Tracking release. Will message with date and reviews",
+
+    "examples.memory.title": "Personal memory",
+    "examples.memory.combo": "Memory",
+    "examples.memory.user1": "I'm vegetarian",
+    "examples.memory.bot1": "Noted! I'll keep that in mind for recipes and restaurant suggestions",
+    "examples.memory.user2": "Find me a quick dinner recipe",
+    "examples.memory.bot2": "Here are 3 vegetarian recipes under 30 min 🌿",
 
     "pricing.title": "Pricing",
     "pricing.free.name": "Free",
@@ -103,7 +110,11 @@
       },
       {
         "q": "How does memory work?",
-        "a": "The bot remembers your context between chats — preferences, plans, and ongoing tasks. Memory is the same for Free and Pro."
+        "a": "The bot saves facts you mention — preferences, plans, names, habits — and uses them in future conversations. It can pick things up automatically or you can say \"remember that I...\" explicitly. Use /memory to review and delete stored facts anytime. Memory is the same for Free and Pro."
+      },
+      {
+        "q": "What does the bot remember about me?",
+        "a": "It remembers facts you share — like dietary preferences, car details, project names, or anything you ask it to save. Memory works automatically but you're always in control: use /memory to see what's stored and delete anything you want."
       },
       {
         "q": "What are the message limits?",
@@ -146,7 +157,7 @@
     "hero.note": "Бесплатный старт · Оплата через Telegram Stars",
 
     "features.memory.title": "Память, которая вас знает",
-    "features.memory.desc": "Помнит контекст между разговорами, чтобы вам не приходилось повторяться.",
+    "features.memory.desc": "Запоминает факты о вас между сессиями — предпочтения, диету, пробег авто, всё что вы упоминаете. Можно попросить запомнить явно, или бот сохранит сам. Полный контроль: можно посмотреть и удалить память в любой момент.",
     "features.search.title": "Живой веб-поиск",
     "features.search.desc": "Находит свежую информацию в реальном времени и держит вас в курсе.",
     "features.scheduler.title": "Умный планировщик",
@@ -190,6 +201,13 @@
     "examples.entertainment.combo": "Планировщик + Веб-поиск",
     "examples.entertainment.user": "Напомни, когда выйдет 3 сезон Dark, и пришли отзывы",
     "examples.entertainment.bot": "Отслеживаю релиз. Напишу дату выхода и отзывы",
+
+    "examples.memory.title": "Персональная память",
+    "examples.memory.combo": "Память",
+    "examples.memory.user1": "Я вегетарианец",
+    "examples.memory.bot1": "Запомнил! Буду учитывать при поиске рецептов и ресторанов",
+    "examples.memory.user2": "Найди быстрый рецепт на ужин",
+    "examples.memory.bot2": "Вот 3 вегетарианских рецепта до 30 минут 🌿",
 
     "pricing.title": "Тарифы",
     "pricing.free.name": "Бесплатный",
@@ -240,7 +258,11 @@
       },
       {
         "q": "Как работает память?",
-        "a": "Бот помнит контекст между диалогами: предпочтения, планы и задачи. Память одинаковая для Free и Pro."
+        "a": "Бот сохраняет факты, которые вы упоминаете — предпочтения, планы, имена, привычки — и использует их в будущих разговорах. Он может запоминать автоматически, или вы можете сказать «запомни, что я...» явно. Команда /memory покажет и удалит сохранённое. Память одинаковая для Free и Pro."
+      },
+      {
+        "q": "Что бот запоминает обо мне?",
+        "a": "Бот запоминает факты, которые вы упоминаете — диетические предпочтения, данные об авто, названия проектов или то, что вы явно попросите сохранить. Память работает автоматически, но вы всегда контролируете: команда /memory покажет всё сохранённое, и любой факт можно удалить."
       },
       {
         "q": "Какие лимиты сообщений?",
